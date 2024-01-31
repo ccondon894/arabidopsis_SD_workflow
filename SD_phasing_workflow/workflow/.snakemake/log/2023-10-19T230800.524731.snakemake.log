@@ -1,2 +1,0 @@
-SyntaxError in file /scratch1/chris/arabidopsis_sd/SD_phasing_workflow/workflow/rules/calc_pop_summary_stats.smk, line 51:
-invalid syntax. Perhaps you forgot a comma?

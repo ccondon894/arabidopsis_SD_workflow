@@ -1,3 +1,0 @@
-WildcardError in file /scratch1/chris/arabidopsis_sd/SD_phasing_workflow/workflow/rules/calc_pop_summary_stats.smk, line 26:
-No values given for wildcard 'comparison'.
-  File "/scratch1/chris/arabidopsis_sd/SD_phasing_workflow/workflow/rules/calc_pop_summary_stats.smk", line 26, in <module>

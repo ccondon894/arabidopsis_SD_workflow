@@ -1,8 +1,0 @@
-Building DAG of jobs...
-InputFunctionException in file /scratch1/chris/arabidopsis_sd/SD_phasing_workflow/workflow/rules/calc_family_pi.smk, line 11:
-Error:
-  AttributeError: 'Wildcards' object has no attribute 'sample'
-Wildcards:
-  cross=X01.windowed.pi
-Traceback:
-  File "/scratch1/chris/arabidopsis_sd/SD_phasing_workflow/workflow/rules/calc_family_pi.smk", line 4, in get_sample
