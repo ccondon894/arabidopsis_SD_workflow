@@ -1,3 +1,0 @@
-SyntaxError in line 9 of /home/chris/arabadopsis_sd/SD_phasing_workflow/workflow/rules/phase_vcf.smk:
-invalid syntax. Perhaps you forgot a comma?
-  File "/home/chris/arabadopsis_sd/SD_phasing_workflow/workflow/Snakefile", line 4, in <module>
