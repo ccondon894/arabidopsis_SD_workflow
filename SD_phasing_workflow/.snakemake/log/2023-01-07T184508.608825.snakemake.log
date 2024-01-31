@@ -1,0 +1,9 @@
+Building DAG of jobs...
+MissingInputException in line 34 of /home/chris/arabadopsis_sd/SD_phasing_workflow/workflow/rules/phase_vcf.smk:
+Missing input files for rule phase_p_sample:
+    output: phased_vcfs/arabidopsis_Ahalleri_AUBY1_final_v1.0_filtered.X01_P.phased.vcf
+    wildcards: cross=X01
+    affected files:
+        /home/chris/arabadopsis_sd/ccgp_workflow_output/Ahalleri_AUBY1_final_v1.0X01_P02_final.bam
+        /home/chris/arabadopsis_sd/ccgp_workflow_output/Ahalleri_AUBY1_final_v1.0X01_P01_final.bam
+        /home/chris/arabadopsis_sd/ccgp_workflow_output/Ahalleri_AUBY1_final_v1.0X01_P_final.bam

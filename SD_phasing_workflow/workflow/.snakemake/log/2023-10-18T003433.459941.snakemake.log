@@ -1,0 +1,667 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 40
+Rules claiming more threads will be scaled down.
+Job stats:
+job             count    min threads    max threads
+------------  -------  -------------  -------------
+all                 1              1              1
+calculate_pi     2016              1              1
+total            2017              1              1
+
+Select jobs to execute...
+
+[Wed Oct 18 00:34:35 2023]
+rule calculate_pi:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X06_L_vs_X10_P01
+    jobid: 1088
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X06_L_vs_X10_P01
+    wildcards: comparison=X06_L_vs_X10_P01
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X06_L --indv X10_P01 --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X06_L_vs_X10_P01
+        
+
+[Wed Oct 18 00:34:35 2023]
+rule calculate_pi:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X08_P_vs_X15_L
+    jobid: 1448
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X08_P_vs_X15_L
+    wildcards: comparison=X08_P_vs_X15_L
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X08_P --indv X15_L --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X08_P_vs_X15_L
+        
+
+[Wed Oct 18 00:34:35 2023]
+rule calculate_pi:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X05_P_vs_X06_P
+    jobid: 939
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X05_P_vs_X06_P
+    wildcards: comparison=X05_P_vs_X06_P
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X05_P --indv X06_P --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X05_P_vs_X06_P
+        
+
+[Wed Oct 18 00:34:35 2023]
+rule calculate_pi:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X08_P02_vs_X13_P02
+    jobid: 1508
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X08_P02_vs_X13_P02
+    wildcards: comparison=X08_P02_vs_X13_P02
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X08_P02 --indv X13_P02 --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X08_P02_vs_X13_P02
+        
+
+[Wed Oct 18 00:34:35 2023]
+rule calculate_pi:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X01_P_vs_X12_P
+    jobid: 107
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X01_P_vs_X12_P
+    wildcards: comparison=X01_P_vs_X12_P
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X01_P --indv X12_P --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X01_P_vs_X12_P
+        
+
+[Wed Oct 18 00:34:35 2023]
+rule calculate_pi:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X05_P01_vs_X12_L
+    jobid: 1007
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X05_P01_vs_X12_L
+    wildcards: comparison=X05_P01_vs_X12_L
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X05_P01 --indv X12_L --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X05_P01_vs_X12_L
+        
+
+[Wed Oct 18 00:34:35 2023]
+rule calculate_pi:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X06_L_vs_X10_P02
+    jobid: 1089
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X06_L_vs_X10_P02
+    wildcards: comparison=X06_L_vs_X10_P02
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X06_L --indv X10_P02 --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X06_L_vs_X10_P02
+        
+
+[Wed Oct 18 00:34:35 2023]
+rule calculate_pi:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X08_P_vs_X15_P
+    jobid: 1449
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X08_P_vs_X15_P
+    wildcards: comparison=X08_P_vs_X15_P
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X08_P --indv X15_P --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X08_P_vs_X15_P
+        
+
+[Wed Oct 18 00:34:35 2023]
+rule calculate_pi:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X08_P02_vs_X14_L
+    jobid: 1509
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X08_P02_vs_X14_L
+    wildcards: comparison=X08_P02_vs_X14_L
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X08_P02 --indv X14_L --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X08_P02_vs_X14_L
+        
+
+[Wed Oct 18 00:34:35 2023]
+rule calculate_pi:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X08_P01_vs_X09_L
+    jobid: 1457
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X08_P01_vs_X09_L
+    wildcards: comparison=X08_P01_vs_X09_L
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X08_P01 --indv X09_L --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X08_P01_vs_X09_L
+        
+
+[Wed Oct 18 00:34:35 2023]
+rule calculate_pi:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X06_L_vs_X11_L
+    jobid: 1090
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X06_L_vs_X11_L
+    wildcards: comparison=X06_L_vs_X11_L
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X06_L --indv X11_L --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X06_L_vs_X11_L
+        
+
+[Wed Oct 18 00:34:35 2023]
+rule calculate_pi:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X08_P_vs_X15_P01
+    jobid: 1450
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X08_P_vs_X15_P01
+    wildcards: comparison=X08_P_vs_X15_P01
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X08_P --indv X15_P01 --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X08_P_vs_X15_P01
+        
+
+[Wed Oct 18 00:34:35 2023]
+rule calculate_pi:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X08_P02_vs_X14_P
+    jobid: 1510
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X08_P02_vs_X14_P
+    wildcards: comparison=X08_P02_vs_X14_P
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X08_P02 --indv X14_P --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X08_P02_vs_X14_P
+        
+
+[Wed Oct 18 00:34:35 2023]
+rule calculate_pi:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X08_P02_vs_X12_P01
+    jobid: 1503
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X08_P02_vs_X12_P01
+    wildcards: comparison=X08_P02_vs_X12_P01
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X08_P02 --indv X12_P01 --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X08_P02_vs_X12_P01
+        
+
+[Wed Oct 18 00:34:35 2023]
+rule calculate_pi:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X06_L_vs_X11_P
+    jobid: 1091
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X06_L_vs_X11_P
+    wildcards: comparison=X06_L_vs_X11_P
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X06_L --indv X11_P --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X06_L_vs_X11_P
+        
+
+[Wed Oct 18 00:34:35 2023]
+rule calculate_pi:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X08_P_vs_X15_P02
+    jobid: 1451
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X08_P_vs_X15_P02
+    wildcards: comparison=X08_P_vs_X15_P02
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X08_P --indv X15_P02 --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X08_P_vs_X15_P02
+        
+
+[Wed Oct 18 00:34:35 2023]
+rule calculate_pi:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X08_P02_vs_X14_P01
+    jobid: 1511
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X08_P02_vs_X14_P01
+    wildcards: comparison=X08_P02_vs_X14_P01
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X08_P02 --indv X14_P01 --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X08_P02_vs_X14_P01
+        
+
+[Wed Oct 18 00:34:35 2023]
+rule calculate_pi:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X08_P_vs_X14_L
+    jobid: 1444
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X08_P_vs_X14_L
+    wildcards: comparison=X08_P_vs_X14_L
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X08_P --indv X14_L --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X08_P_vs_X14_L
+        
+
+[Wed Oct 18 00:34:35 2023]
+rule calculate_pi:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X08_P02_vs_X12_P02
+    jobid: 1504
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X08_P02_vs_X12_P02
+    wildcards: comparison=X08_P02_vs_X12_P02
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X08_P02 --indv X12_P02 --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X08_P02_vs_X12_P02
+        
+
+[Wed Oct 18 00:34:35 2023]
+rule calculate_pi:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X06_L_vs_X09_P01
+    jobid: 1084
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X06_L_vs_X09_P01
+    wildcards: comparison=X06_L_vs_X09_P01
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X06_L --indv X09_P01 --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X06_L_vs_X09_P01
+        
+
+[Wed Oct 18 00:34:35 2023]
+rule calculate_pi:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X06_L_vs_X11_P01
+    jobid: 1092
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X06_L_vs_X11_P01
+    wildcards: comparison=X06_L_vs_X11_P01
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X06_L --indv X11_P01 --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X06_L_vs_X11_P01
+        
+
+[Wed Oct 18 00:34:35 2023]
+rule calculate_pi:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X08_P_vs_X16_L
+    jobid: 1452
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X08_P_vs_X16_L
+    wildcards: comparison=X08_P_vs_X16_L
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X08_P --indv X16_L --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X08_P_vs_X16_L
+        
+
+[Wed Oct 18 00:34:35 2023]
+rule calculate_pi:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X08_P02_vs_X14_P02
+    jobid: 1512
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X08_P02_vs_X14_P02
+    wildcards: comparison=X08_P02_vs_X14_P02
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X08_P02 --indv X14_P02 --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X08_P02_vs_X14_P02
+        
+
+[Wed Oct 18 00:34:35 2023]
+rule calculate_pi:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X06_L_vs_X13_P01
+    jobid: 1100
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X06_L_vs_X13_P01
+    wildcards: comparison=X06_L_vs_X13_P01
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X06_L --indv X13_P01 --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X06_L_vs_X13_P01
+        
+
+[Wed Oct 18 00:34:35 2023]
+rule calculate_pi:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X06_L_vs_X09_P02
+    jobid: 1085
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X06_L_vs_X09_P02
+    wildcards: comparison=X06_L_vs_X09_P02
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X06_L --indv X09_P02 --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X06_L_vs_X09_P02
+        
+
+[Wed Oct 18 00:34:35 2023]
+rule calculate_pi:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X08_P_vs_X14_P
+    jobid: 1445
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X08_P_vs_X14_P
+    wildcards: comparison=X08_P_vs_X14_P
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X08_P --indv X14_P --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X08_P_vs_X14_P
+        
+
+[Wed Oct 18 00:34:35 2023]
+rule calculate_pi:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X08_P02_vs_X13_L
+    jobid: 1505
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X08_P02_vs_X13_L
+    wildcards: comparison=X08_P02_vs_X13_L
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X08_P02 --indv X13_L --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X08_P02_vs_X13_L
+        
+
+[Wed Oct 18 00:34:35 2023]
+rule calculate_pi:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X08_P01_vs_X09_P02
+    jobid: 1460
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X08_P01_vs_X09_P02
+    wildcards: comparison=X08_P01_vs_X09_P02
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X08_P01 --indv X09_P02 --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X08_P01_vs_X09_P02
+        
+
+[Wed Oct 18 00:34:35 2023]
+rule calculate_pi:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X08_P02_vs_X16_P02
+    jobid: 1520
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X08_P02_vs_X16_P02
+    wildcards: comparison=X08_P02_vs_X16_P02
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X08_P02 --indv X16_P02 --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X08_P02_vs_X16_P02
+        
+
+[Wed Oct 18 00:34:35 2023]
+rule calculate_pi:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X06_L_vs_X13_P02
+    jobid: 1101
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X06_L_vs_X13_P02
+    wildcards: comparison=X06_L_vs_X13_P02
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X06_L --indv X13_P02 --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X06_L_vs_X13_P02
+        
+
+[Wed Oct 18 00:34:35 2023]
+rule calculate_pi:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X06_L_vs_X10_L
+    jobid: 1086
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X06_L_vs_X10_L
+    wildcards: comparison=X06_L_vs_X10_L
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X06_L --indv X10_L --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X06_L_vs_X10_L
+        
+
+[Wed Oct 18 00:34:35 2023]
+rule calculate_pi:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X08_P_vs_X14_P01
+    jobid: 1446
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X08_P_vs_X14_P01
+    wildcards: comparison=X08_P_vs_X14_P01
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X08_P --indv X14_P01 --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X08_P_vs_X14_P01
+        
+
+[Wed Oct 18 00:34:35 2023]
+rule calculate_pi:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X08_P02_vs_X13_P
+    jobid: 1506
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X08_P02_vs_X13_P
+    wildcards: comparison=X08_P02_vs_X13_P
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X08_P02 --indv X13_P --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X08_P02_vs_X13_P
+        
+
+[Wed Oct 18 00:34:35 2023]
+rule calculate_pi:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X08_P01_vs_X10_L
+    jobid: 1461
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X08_P01_vs_X10_L
+    wildcards: comparison=X08_P01_vs_X10_L
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X08_P01 --indv X10_L --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X08_P01_vs_X10_L
+        
+
+[Wed Oct 18 00:34:35 2023]
+rule calculate_pi:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X09_L_vs_X09_P
+    jobid: 1521
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X09_L_vs_X09_P
+    wildcards: comparison=X09_L_vs_X09_P
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X09_L --indv X09_P --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X09_L_vs_X09_P
+        
+
+[Wed Oct 18 00:34:35 2023]
+rule calculate_pi:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X03_P02_vs_X05_P02
+    jobid: 646
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X03_P02_vs_X05_P02
+    wildcards: comparison=X03_P02_vs_X05_P02
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X03_P02 --indv X05_P02 --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X03_P02_vs_X05_P02
+        
+
+[Wed Oct 18 00:34:35 2023]
+rule calculate_pi:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X06_L_vs_X10_P
+    jobid: 1087
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X06_L_vs_X10_P
+    wildcards: comparison=X06_L_vs_X10_P
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X06_L --indv X10_P --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X06_L_vs_X10_P
+        
+
+[Wed Oct 18 00:34:35 2023]
+rule calculate_pi:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X08_P_vs_X14_P02
+    jobid: 1447
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X08_P_vs_X14_P02
+    wildcards: comparison=X08_P_vs_X14_P02
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X08_P --indv X14_P02 --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X08_P_vs_X14_P02
+        
+
+[Wed Oct 18 00:34:35 2023]
+rule calculate_pi:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X08_P02_vs_X13_P01
+    jobid: 1507
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X08_P02_vs_X13_P01
+    wildcards: comparison=X08_P02_vs_X13_P01
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X08_P02 --indv X13_P01 --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X08_P02_vs_X13_P01
+        
+
+[Wed Oct 18 00:34:35 2023]
+rule calculate_pi:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X01_P_vs_X12_L
+    jobid: 106
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X01_P_vs_X12_L
+    wildcards: comparison=X01_P_vs_X12_L
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X01_P --indv X12_L --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X01_P_vs_X12_L
+        
+Waiting at most 5 seconds for missing files.
+MissingOutputException in rule calculate_pi in file /scratch1/chris/arabidopsis_sd/SD_phasing_workflow/workflow/rules/calc_pop_summary_stats.smk, line 28:
+Job 1451  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+/storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X08_P_vs_X15_P02
+Waiting at most 5 seconds for missing files.
+MissingOutputException in rule calculate_pi in file /scratch1/chris/arabidopsis_sd/SD_phasing_workflow/workflow/rules/calc_pop_summary_stats.smk, line 28:
+Job 1511  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+/storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X08_P02_vs_X14_P01
+Waiting at most 5 seconds for missing files.
+MissingOutputException in rule calculate_pi in file /scratch1/chris/arabidopsis_sd/SD_phasing_workflow/workflow/rules/calc_pop_summary_stats.smk, line 28:
+Job 1512  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+/storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X08_P02_vs_X14_P02
+Waiting at most 5 seconds for missing files.
+MissingOutputException in rule calculate_pi in file /scratch1/chris/arabidopsis_sd/SD_phasing_workflow/workflow/rules/calc_pop_summary_stats.smk, line 28:
+Job 1085  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+/storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X06_L_vs_X09_P02
+Waiting at most 5 seconds for missing files.
+MissingOutputException in rule calculate_pi in file /scratch1/chris/arabidopsis_sd/SD_phasing_workflow/workflow/rules/calc_pop_summary_stats.smk, line 28:
+Job 1460  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+/storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X08_P01_vs_X09_P02
+Waiting at most 5 seconds for missing files.
+MissingOutputException in rule calculate_pi in file /scratch1/chris/arabidopsis_sd/SD_phasing_workflow/workflow/rules/calc_pop_summary_stats.smk, line 28:
+Job 939  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+/storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X05_P_vs_X06_P
+Waiting at most 5 seconds for missing files.
+MissingOutputException in rule calculate_pi in file /scratch1/chris/arabidopsis_sd/SD_phasing_workflow/workflow/rules/calc_pop_summary_stats.smk, line 28:
+Job 1084  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+/storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X06_L_vs_X09_P01
+Waiting at most 5 seconds for missing files.
+MissingOutputException in rule calculate_pi in file /scratch1/chris/arabidopsis_sd/SD_phasing_workflow/workflow/rules/calc_pop_summary_stats.smk, line 28:
+Job 1087  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+/storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X06_L_vs_X10_P
+Waiting at most 5 seconds for missing files.
+MissingOutputException in rule calculate_pi in file /scratch1/chris/arabidopsis_sd/SD_phasing_workflow/workflow/rules/calc_pop_summary_stats.smk, line 28:
+Job 1521  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+/storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X09_L_vs_X09_P
+Waiting at most 5 seconds for missing files.
+MissingOutputException in rule calculate_pi in file /scratch1/chris/arabidopsis_sd/SD_phasing_workflow/workflow/rules/calc_pop_summary_stats.smk, line 28:
+Job 1450  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+/storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X08_P_vs_X15_P01
+Waiting at most 5 seconds for missing files.
+MissingOutputException in rule calculate_pi in file /scratch1/chris/arabidopsis_sd/SD_phasing_workflow/workflow/rules/calc_pop_summary_stats.smk, line 28:
+Job 1090  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+/storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X06_L_vs_X11_L
+Waiting at most 5 seconds for missing files.
+MissingOutputException in rule calculate_pi in file /scratch1/chris/arabidopsis_sd/SD_phasing_workflow/workflow/rules/calc_pop_summary_stats.smk, line 28:
+Job 1101  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+/storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X06_L_vs_X13_P02
+Waiting at most 5 seconds for missing files.
+MissingOutputException in rule calculate_pi in file /scratch1/chris/arabidopsis_sd/SD_phasing_workflow/workflow/rules/calc_pop_summary_stats.smk, line 28:
+Job 1444  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+/storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X08_P_vs_X14_L
+Waiting at most 5 seconds for missing files.
+MissingOutputException in rule calculate_pi in file /scratch1/chris/arabidopsis_sd/SD_phasing_workflow/workflow/rules/calc_pop_summary_stats.smk, line 28:
+Job 1088  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+/storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X06_L_vs_X10_P01
+Waiting at most 5 seconds for missing files.
+MissingOutputException in rule calculate_pi in file /scratch1/chris/arabidopsis_sd/SD_phasing_workflow/workflow/rules/calc_pop_summary_stats.smk, line 28:
+Job 1505  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+/storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X08_P02_vs_X13_L
+Waiting at most 5 seconds for missing files.
+MissingOutputException in rule calculate_pi in file /scratch1/chris/arabidopsis_sd/SD_phasing_workflow/workflow/rules/calc_pop_summary_stats.smk, line 28:
+Job 1446  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+/storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X08_P_vs_X14_P01
+Waiting at most 5 seconds for missing files.
+MissingOutputException in rule calculate_pi in file /scratch1/chris/arabidopsis_sd/SD_phasing_workflow/workflow/rules/calc_pop_summary_stats.smk, line 28:
+Job 1508  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+/storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X08_P02_vs_X13_P02
+Waiting at most 5 seconds for missing files.
+MissingOutputException in rule calculate_pi in file /scratch1/chris/arabidopsis_sd/SD_phasing_workflow/workflow/rules/calc_pop_summary_stats.smk, line 28:
+Job 646  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+/storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X03_P02_vs_X05_P02
+Waiting at most 5 seconds for missing files.
+MissingOutputException in rule calculate_pi in file /scratch1/chris/arabidopsis_sd/SD_phasing_workflow/workflow/rules/calc_pop_summary_stats.smk, line 28:
+Job 1510  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+/storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X08_P02_vs_X14_P
+Waiting at most 5 seconds for missing files.
+MissingOutputException in rule calculate_pi in file /scratch1/chris/arabidopsis_sd/SD_phasing_workflow/workflow/rules/calc_pop_summary_stats.smk, line 28:
+Job 1089  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+/storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X06_L_vs_X10_P02
+Waiting at most 5 seconds for missing files.
+MissingOutputException in rule calculate_pi in file /scratch1/chris/arabidopsis_sd/SD_phasing_workflow/workflow/rules/calc_pop_summary_stats.smk, line 28:
+Job 1086  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+/storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X06_L_vs_X10_L
+Waiting at most 5 seconds for missing files.
+MissingOutputException in rule calculate_pi in file /scratch1/chris/arabidopsis_sd/SD_phasing_workflow/workflow/rules/calc_pop_summary_stats.smk, line 28:
+Job 1447  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+/storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X08_P_vs_X14_P02
+Waiting at most 5 seconds for missing files.
+MissingOutputException in rule calculate_pi in file /scratch1/chris/arabidopsis_sd/SD_phasing_workflow/workflow/rules/calc_pop_summary_stats.smk, line 28:
+Job 1504  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+/storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X08_P02_vs_X12_P02
+Waiting at most 5 seconds for missing files.
+MissingOutputException in rule calculate_pi in file /scratch1/chris/arabidopsis_sd/SD_phasing_workflow/workflow/rules/calc_pop_summary_stats.smk, line 28:
+Job 1503  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+/storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X08_P02_vs_X12_P01
+Waiting at most 5 seconds for missing files.
+MissingOutputException in rule calculate_pi in file /scratch1/chris/arabidopsis_sd/SD_phasing_workflow/workflow/rules/calc_pop_summary_stats.smk, line 28:
+Job 1007  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+/storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X05_P01_vs_X12_L
+Waiting at most 5 seconds for missing files.
+MissingOutputException in rule calculate_pi in file /scratch1/chris/arabidopsis_sd/SD_phasing_workflow/workflow/rules/calc_pop_summary_stats.smk, line 28:
+Job 1509  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+/storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X08_P02_vs_X14_L
+Waiting at most 5 seconds for missing files.
+MissingOutputException in rule calculate_pi in file /scratch1/chris/arabidopsis_sd/SD_phasing_workflow/workflow/rules/calc_pop_summary_stats.smk, line 28:
+Job 106  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+/storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X01_P_vs_X12_L
+Waiting at most 5 seconds for missing files.
+MissingOutputException in rule calculate_pi in file /scratch1/chris/arabidopsis_sd/SD_phasing_workflow/workflow/rules/calc_pop_summary_stats.smk, line 28:
+Job 1091  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+/storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X06_L_vs_X11_P
+Waiting at most 5 seconds for missing files.
+MissingOutputException in rule calculate_pi in file /scratch1/chris/arabidopsis_sd/SD_phasing_workflow/workflow/rules/calc_pop_summary_stats.smk, line 28:
+Job 1449  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+/storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X08_P_vs_X15_P
+Waiting at most 5 seconds for missing files.
+MissingOutputException in rule calculate_pi in file /scratch1/chris/arabidopsis_sd/SD_phasing_workflow/workflow/rules/calc_pop_summary_stats.smk, line 28:
+Job 1520  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+/storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X08_P02_vs_X16_P02
+Waiting at most 5 seconds for missing files.
+MissingOutputException in rule calculate_pi in file /scratch1/chris/arabidopsis_sd/SD_phasing_workflow/workflow/rules/calc_pop_summary_stats.smk, line 28:
+Job 1506  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+/storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X08_P02_vs_X13_P
+Waiting at most 5 seconds for missing files.
+MissingOutputException in rule calculate_pi in file /scratch1/chris/arabidopsis_sd/SD_phasing_workflow/workflow/rules/calc_pop_summary_stats.smk, line 28:
+Job 1445  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+/storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X08_P_vs_X14_P
+Waiting at most 5 seconds for missing files.
+MissingOutputException in rule calculate_pi in file /scratch1/chris/arabidopsis_sd/SD_phasing_workflow/workflow/rules/calc_pop_summary_stats.smk, line 28:
+Job 1100  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+/storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X06_L_vs_X13_P01
+Waiting at most 5 seconds for missing files.
+Terminating processes on user request, this might take some time.
+Complete log: .snakemake/log/2023-10-18T003433.459941.snakemake.log

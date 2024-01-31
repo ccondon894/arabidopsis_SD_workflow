@@ -1,0 +1,3 @@
+[submodule "SD_phasing_workflow/workflow/MAP_SD"]
+	path = SD_phasing_workflow/workflow/MAP_SD
+	url = https://github.com/russcd/MAP_SD.git

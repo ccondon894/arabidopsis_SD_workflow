@@ -1,0 +1,50 @@
+# Adjust the following parameters depending on file locations. 
+fastq_folder: "/storage1/chris/arabidopsis_Alyrata_107/00_fastqFiltered/" # path to trimmed fastq files
+bam_folder: "/storage1/chris/arabidopsis_Alyrata_107/01_mappedReads/" # path to bam files
+vcf_path: "/storage1/chris/arabidopsis_Alyrata_107/" # path to vcf file
+vcf_file: "arabidopsis_Alyrata_107.filtered" # vcf file name. Do not include '.vcf' or '.vcf.gz'
+species_folder: "results/arabidopsis_Alyrata_107" # species folder name 
+ref_genome: "ccgp_workflow_output/arabidopsis_Alyrata_107/Alyrata_107.fa" # reference genome fasta location 
+
+
+scaffolds: # scaffolds specifically for Ahal_AUBY1 and Alyrata_107
+  
+  # scaffold_1: "Ahal_AUBY1_scaffold_1:1-31695338" # for A. halleri runs 
+  # scaffold_2: "Ahal_AUBY1_scaffold_2:1-28106121"
+  # scaffold_3: "Ahal_AUBY1_scaffold_3:1-26683364"
+  # scaffold_4: "Ahal_AUBY1_scaffold_4:1-26638906"
+  # scaffold_5: "Ahal_AUBY1_scaffold_5:1-25926841"
+  # scaffold_6: "Ahal_AUBY1_scaffold_6:1-24288726"
+  # scaffold_7: "Ahal_AUBY1_scaffold_7:1-22652745"
+  # scaffold_8: "Ahal_AUBY1_scaffold_8:1-22205262"
+
+  scaffold_1: "scaffold_1:1-33132539" # for A. lyrata runs 
+  scaffold_2: "scaffold_2:1-19320864"
+  scaffold_3: "scaffold_3:1-24464547"
+  scaffold_4: "scaffold_4:1-23328337"
+  scaffold_5: "scaffold_5:1-21221946"
+  scaffold_6: "scaffold_6:1-25113588"
+  scaffold_7: "scaffold_7:1-24649197"
+  scaffold_8: "scaffold_8:1-22951293"
+
+crosses:
+  X01: "X01"
+  X02: "X02"
+  X03: "X03"
+  X04: "X04"
+  X05: "X05"
+  X06: "X06"
+  X07: "X07"
+  X08: "X08"
+  X09: "X09"
+  X10: "X10"
+  X11: "X11"
+  X12: "X12"
+  X13: "X13"
+  X14: "X14"
+  X15: "X15"
+  X16: "X16"
+  
+conda_env: "workflow/envs/arabidopsis.yml"
+
+threads: 8

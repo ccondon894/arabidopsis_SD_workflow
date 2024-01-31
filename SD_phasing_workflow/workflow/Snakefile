@@ -1,0 +1,13 @@
+configfile: "config/config.yaml"
+
+include: "rules/phase_vcf.smk"
+include: "rules/retrim_and_remap.smk"
+include: "rules/update_vcf_and_make_plots.smk"
+def get_cross(wildcards):
+    return config["crosses"][wildcards.cross]
+
+# testing if the first 
+rule all:
+    input:
+        # expand(config["species_folder"] + "ratio_plots/Ahalleri.{cross}.ratios.no_likelihood.png", cross=config["crosses"]),
+        expand(config["species_folder"] + "ratio_plots/{cross}.ratios.png", cross=config["crosses"]),

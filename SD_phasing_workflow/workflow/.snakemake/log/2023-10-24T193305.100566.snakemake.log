@@ -1,0 +1,1704 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 65
+Rules claiming more threads will be scaled down.
+Job stats:
+job                  count    min threads    max threads
+-----------------  -------  -------------  -------------
+all                      1              1              1
+calculate_fam_fst      136              1              1
+total                  137              1              1
+
+Select jobs to execute...
+
+[Tue Oct 24 19:33:05 2023]
+rule calculate_fam_fst:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X09.windowed.weir.fst
+    jobid: 24
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X09.windowed.weir.fst
+    wildcards: comparison=X02_vs_X09.windowed.weir.fst
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X09.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X09.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X09.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X09.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X09.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X09.windowed.weir.fst
+        
+
+[Tue Oct 24 19:33:05 2023]
+rule calculate_fam_fst:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X13_vs_X15.windowed.weir.fst
+    jobid: 129
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X13_vs_X15.windowed.weir.fst
+    wildcards: comparison=X13_vs_X15.windowed.weir.fst
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X13.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X15.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X13_vs_X15.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X13_vs_X15.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X13_vs_X15.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X13_vs_X15.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X13_vs_X15.windowed.weir.fst
+        
+
+[Tue Oct 24 19:33:05 2023]
+rule calculate_fam_fst:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X09.windowed.weir.fst
+    jobid: 84
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X09.windowed.weir.fst
+    wildcards: comparison=X07_vs_X09.windowed.weir.fst
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X09.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X09.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X09.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X09.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X09.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X09.windowed.weir.fst
+        
+
+[Tue Oct 24 19:33:05 2023]
+rule calculate_fam_fst:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X12.windowed.weir.fst
+    jobid: 54
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X12.windowed.weir.fst
+    wildcards: comparison=X04_vs_X12.windowed.weir.fst
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X12.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X12.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X12.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X12.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X12.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X12.windowed.weir.fst
+        
+
+[Tue Oct 24 19:33:05 2023]
+rule calculate_fam_fst:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10_vs_X15.windowed.weir.fst
+    jobid: 114
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10_vs_X15.windowed.weir.fst
+    wildcards: comparison=X10_vs_X15.windowed.weir.fst
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X15.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10_vs_X15.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10_vs_X15.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10_vs_X15.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10_vs_X15.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10_vs_X15.windowed.weir.fst
+        
+
+[Tue Oct 24 19:33:05 2023]
+rule calculate_fam_fst:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X02.windowed.weir.fst
+    jobid: 17
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X02.windowed.weir.fst
+    wildcards: comparison=X02_vs_X02.windowed.weir.fst
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X02.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X02.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X02.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X02.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X02.windowed.weir.fst
+        
+
+[Tue Oct 24 19:33:05 2023]
+rule calculate_fam_fst:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X06_vs_X12.windowed.weir.fst
+    jobid: 77
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X06_vs_X12.windowed.weir.fst
+    wildcards: comparison=X06_vs_X12.windowed.weir.fst
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X06.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X12.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X06_vs_X12.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X06_vs_X12.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X06_vs_X12.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X06_vs_X12.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X06_vs_X12.windowed.weir.fst
+        
+
+[Tue Oct 24 19:33:05 2023]
+rule calculate_fam_fst:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X05.windowed.weir.fst
+    jobid: 47
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X05.windowed.weir.fst
+    wildcards: comparison=X04_vs_X05.windowed.weir.fst
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X05.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X05.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X05.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X05.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X05.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X05.windowed.weir.fst
+        
+
+[Tue Oct 24 19:33:05 2023]
+rule calculate_fam_fst:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X09_vs_X15.windowed.weir.fst
+    jobid: 107
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X09_vs_X15.windowed.weir.fst
+    wildcards: comparison=X09_vs_X15.windowed.weir.fst
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X09.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X15.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X09_vs_X15.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X09_vs_X15.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X09_vs_X15.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X09_vs_X15.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X09_vs_X15.windowed.weir.fst
+        
+
+[Tue Oct 24 19:33:05 2023]
+rule calculate_fam_fst:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X10.windowed.weir.fst
+    jobid: 25
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X10.windowed.weir.fst
+    wildcards: comparison=X02_vs_X10.windowed.weir.fst
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X10.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X10.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X10.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X10.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X10.windowed.weir.fst
+        
+
+[Tue Oct 24 19:33:05 2023]
+rule calculate_fam_fst:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X05_vs_X16.windowed.weir.fst
+    jobid: 70
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X05_vs_X16.windowed.weir.fst
+    wildcards: comparison=X05_vs_X16.windowed.weir.fst
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X05.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X16.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X05_vs_X16.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X05_vs_X16.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X05_vs_X16.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X05_vs_X16.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X05_vs_X16.windowed.weir.fst
+        
+
+[Tue Oct 24 19:33:05 2023]
+rule calculate_fam_fst:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X01_vs_X10.windowed.weir.fst
+    jobid: 10
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X01_vs_X10.windowed.weir.fst
+    wildcards: comparison=X01_vs_X10.windowed.weir.fst
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X01.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X01_vs_X10.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X01_vs_X10.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X01_vs_X10.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X01_vs_X10.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X01_vs_X10.windowed.weir.fst
+        
+
+[Tue Oct 24 19:33:05 2023]
+rule calculate_fam_fst:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X03_vs_X11.windowed.weir.fst
+    jobid: 40
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X03_vs_X11.windowed.weir.fst
+    wildcards: comparison=X03_vs_X11.windowed.weir.fst
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X03.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X11.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X03_vs_X11.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X03_vs_X11.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X03_vs_X11.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X03_vs_X11.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X03_vs_X11.windowed.weir.fst
+        
+
+[Tue Oct 24 19:33:05 2023]
+rule calculate_fam_fst:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X08_vs_X16.windowed.weir.fst
+    jobid: 100
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X08_vs_X16.windowed.weir.fst
+    wildcards: comparison=X08_vs_X16.windowed.weir.fst
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X08.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X16.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X08_vs_X16.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X08_vs_X16.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X08_vs_X16.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X08_vs_X16.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X08_vs_X16.windowed.weir.fst
+        
+
+[Tue Oct 24 19:33:05 2023]
+rule calculate_fam_fst:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X13_vs_X16.windowed.weir.fst
+    jobid: 130
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X13_vs_X16.windowed.weir.fst
+    wildcards: comparison=X13_vs_X16.windowed.weir.fst
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X13.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X16.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X13_vs_X16.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X13_vs_X16.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X13_vs_X16.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X13_vs_X16.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X13_vs_X16.windowed.weir.fst
+        
+
+[Tue Oct 24 19:33:05 2023]
+rule calculate_fam_fst:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X10.windowed.weir.fst
+    jobid: 85
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X10.windowed.weir.fst
+    wildcards: comparison=X07_vs_X10.windowed.weir.fst
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X10.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X10.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X10.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X10.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X10.windowed.weir.fst
+        
+
+[Tue Oct 24 19:33:05 2023]
+rule calculate_fam_fst:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X13.windowed.weir.fst
+    jobid: 55
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X13.windowed.weir.fst
+    wildcards: comparison=X04_vs_X13.windowed.weir.fst
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X13.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X13.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X13.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X13.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X13.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X13.windowed.weir.fst
+        
+
+[Tue Oct 24 19:33:05 2023]
+rule calculate_fam_fst:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10_vs_X16.windowed.weir.fst
+    jobid: 115
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10_vs_X16.windowed.weir.fst
+    wildcards: comparison=X10_vs_X16.windowed.weir.fst
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X16.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10_vs_X16.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10_vs_X16.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10_vs_X16.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10_vs_X16.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10_vs_X16.windowed.weir.fst
+        
+
+[Tue Oct 24 19:33:05 2023]
+rule calculate_fam_fst:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X06_vs_X13.windowed.weir.fst
+    jobid: 78
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X06_vs_X13.windowed.weir.fst
+    wildcards: comparison=X06_vs_X13.windowed.weir.fst
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X06.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X13.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X06_vs_X13.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X06_vs_X13.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X06_vs_X13.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X06_vs_X13.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X06_vs_X13.windowed.weir.fst
+        
+
+[Tue Oct 24 19:33:05 2023]
+rule calculate_fam_fst:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X03.windowed.weir.fst
+    jobid: 18
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X03.windowed.weir.fst
+    wildcards: comparison=X02_vs_X03.windowed.weir.fst
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X03.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X03.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X03.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X03.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X03.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X03.windowed.weir.fst
+        
+
+[Tue Oct 24 19:33:05 2023]
+rule calculate_fam_fst:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X09_vs_X16.windowed.weir.fst
+    jobid: 108
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X09_vs_X16.windowed.weir.fst
+    wildcards: comparison=X09_vs_X16.windowed.weir.fst
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X09.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X16.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X09_vs_X16.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X09_vs_X16.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X09_vs_X16.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X09_vs_X16.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X09_vs_X16.windowed.weir.fst
+        
+
+[Tue Oct 24 19:33:05 2023]
+rule calculate_fam_fst:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X06.windowed.weir.fst
+    jobid: 48
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X06.windowed.weir.fst
+    wildcards: comparison=X04_vs_X06.windowed.weir.fst
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X06.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X06.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X06.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X06.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X06.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X06.windowed.weir.fst
+        
+
+[Tue Oct 24 19:33:05 2023]
+rule calculate_fam_fst:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X11.windowed.weir.fst
+    jobid: 26
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X11.windowed.weir.fst
+    wildcards: comparison=X02_vs_X11.windowed.weir.fst
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X11.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X11.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X11.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X11.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X11.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X11.windowed.weir.fst
+        
+
+[Tue Oct 24 19:33:05 2023]
+rule calculate_fam_fst:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X11.windowed.weir.fst
+    jobid: 86
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X11.windowed.weir.fst
+    wildcards: comparison=X07_vs_X11.windowed.weir.fst
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X11.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X11.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X11.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X11.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X11.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X11.windowed.weir.fst
+        
+
+[Tue Oct 24 19:33:05 2023]
+rule calculate_fam_fst:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X14.windowed.weir.fst
+    jobid: 56
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X14.windowed.weir.fst
+    wildcards: comparison=X04_vs_X14.windowed.weir.fst
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X14.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X14.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X14.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X14.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X14.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X14.windowed.weir.fst
+        
+
+[Tue Oct 24 19:33:05 2023]
+rule calculate_fam_fst:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X11_vs_X11.windowed.weir.fst
+    jobid: 116
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X11_vs_X11.windowed.weir.fst
+    wildcards: comparison=X11_vs_X11.windowed.weir.fst
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X11.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X11.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X11_vs_X11.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X11_vs_X11.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X11_vs_X11.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X11_vs_X11.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X11_vs_X11.windowed.weir.fst
+        
+
+[Tue Oct 24 19:33:05 2023]
+rule calculate_fam_fst:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X04.windowed.weir.fst
+    jobid: 19
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X04.windowed.weir.fst
+    wildcards: comparison=X02_vs_X04.windowed.weir.fst
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X04.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X04.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X04.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X04.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X04.windowed.weir.fst
+        
+
+[Tue Oct 24 19:33:05 2023]
+rule calculate_fam_fst:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X06_vs_X14.windowed.weir.fst
+    jobid: 79
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X06_vs_X14.windowed.weir.fst
+    wildcards: comparison=X06_vs_X14.windowed.weir.fst
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X06.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X14.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X06_vs_X14.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X06_vs_X14.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X06_vs_X14.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X06_vs_X14.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X06_vs_X14.windowed.weir.fst
+        
+
+[Tue Oct 24 19:33:05 2023]
+rule calculate_fam_fst:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X07.windowed.weir.fst
+    jobid: 49
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X07.windowed.weir.fst
+    wildcards: comparison=X04_vs_X07.windowed.weir.fst
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X07.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X07.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X07.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X07.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X07.windowed.weir.fst
+        
+
+[Tue Oct 24 19:33:05 2023]
+rule calculate_fam_fst:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10_vs_X10.windowed.weir.fst
+    jobid: 109
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10_vs_X10.windowed.weir.fst
+    wildcards: comparison=X10_vs_X10.windowed.weir.fst
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10_vs_X10.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10_vs_X10.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10_vs_X10.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10_vs_X10.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10_vs_X10.windowed.weir.fst
+        
+
+[Tue Oct 24 19:33:05 2023]
+rule calculate_fam_fst:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X16.windowed.weir.fst
+    jobid: 91
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X16.windowed.weir.fst
+    wildcards: comparison=X07_vs_X16.windowed.weir.fst
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X16.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X16.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X16.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X16.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X16.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X16.windowed.weir.fst
+        
+
+[Tue Oct 24 19:33:05 2023]
+rule calculate_fam_fst:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X12.windowed.weir.fst
+    jobid: 27
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X12.windowed.weir.fst
+    wildcards: comparison=X02_vs_X12.windowed.weir.fst
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X12.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X12.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X12.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X12.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X12.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X12.windowed.weir.fst
+        
+
+[Tue Oct 24 19:33:05 2023]
+rule calculate_fam_fst:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X05.windowed.weir.fst
+    jobid: 20
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X05.windowed.weir.fst
+    wildcards: comparison=X02_vs_X05.windowed.weir.fst
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X05.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X05.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X05.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X05.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X05.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X05.windowed.weir.fst
+        
+
+[Tue Oct 24 19:33:05 2023]
+rule calculate_fam_fst:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X06_vs_X15.windowed.weir.fst
+    jobid: 80
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X06_vs_X15.windowed.weir.fst
+    wildcards: comparison=X06_vs_X15.windowed.weir.fst
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X06.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X15.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X06_vs_X15.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X06_vs_X15.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X06_vs_X15.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X06_vs_X15.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X06_vs_X15.windowed.weir.fst
+        
+
+[Tue Oct 24 19:33:05 2023]
+rule calculate_fam_fst:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X08.windowed.weir.fst
+    jobid: 50
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X08.windowed.weir.fst
+    wildcards: comparison=X04_vs_X08.windowed.weir.fst
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X08.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X08.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X08.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X08.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X08.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X08.windowed.weir.fst
+        
+
+[Tue Oct 24 19:33:05 2023]
+rule calculate_fam_fst:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10_vs_X11.windowed.weir.fst
+    jobid: 110
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10_vs_X11.windowed.weir.fst
+    wildcards: comparison=X10_vs_X11.windowed.weir.fst
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X11.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10_vs_X11.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10_vs_X11.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10_vs_X11.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10_vs_X11.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10_vs_X11.windowed.weir.fst
+        
+
+[Tue Oct 24 19:33:05 2023]
+rule calculate_fam_fst:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X13.windowed.weir.fst
+    jobid: 28
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X13.windowed.weir.fst
+    wildcards: comparison=X02_vs_X13.windowed.weir.fst
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X13.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X13.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X13.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X13.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X13.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X13.windowed.weir.fst
+        
+
+[Tue Oct 24 19:33:05 2023]
+rule calculate_fam_fst:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X13.windowed.weir.fst
+    jobid: 88
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X13.windowed.weir.fst
+    wildcards: comparison=X07_vs_X13.windowed.weir.fst
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X13.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X13.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X13.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X13.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X13.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X13.windowed.weir.fst
+        
+
+[Tue Oct 24 19:33:05 2023]
+rule calculate_fam_fst:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X16.windowed.weir.fst
+    jobid: 58
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X16.windowed.weir.fst
+    wildcards: comparison=X04_vs_X16.windowed.weir.fst
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X16.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X16.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X16.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X16.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X16.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X16.windowed.weir.fst
+        
+
+[Tue Oct 24 19:33:05 2023]
+rule calculate_fam_fst:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X11_vs_X13.windowed.weir.fst
+    jobid: 118
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X11_vs_X13.windowed.weir.fst
+    wildcards: comparison=X11_vs_X13.windowed.weir.fst
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X11.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X13.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X11_vs_X13.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X11_vs_X13.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X11_vs_X13.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X11_vs_X13.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X11_vs_X13.windowed.weir.fst
+        
+
+[Tue Oct 24 19:33:05 2023]
+rule calculate_fam_fst:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X06.windowed.weir.fst
+    jobid: 21
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X06.windowed.weir.fst
+    wildcards: comparison=X02_vs_X06.windowed.weir.fst
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X06.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X06.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X06.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X06.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X06.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X06.windowed.weir.fst
+        
+
+[Tue Oct 24 19:33:05 2023]
+rule calculate_fam_fst:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X06_vs_X16.windowed.weir.fst
+    jobid: 81
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X06_vs_X16.windowed.weir.fst
+    wildcards: comparison=X06_vs_X16.windowed.weir.fst
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X06.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X16.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X06_vs_X16.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X06_vs_X16.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X06_vs_X16.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X06_vs_X16.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X06_vs_X16.windowed.weir.fst
+        
+
+[Tue Oct 24 19:33:05 2023]
+rule calculate_fam_fst:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X09.windowed.weir.fst
+    jobid: 51
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X09.windowed.weir.fst
+    wildcards: comparison=X04_vs_X09.windowed.weir.fst
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X09.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X09.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X09.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X09.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X09.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X09.windowed.weir.fst
+        
+
+[Tue Oct 24 19:33:05 2023]
+rule calculate_fam_fst:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10_vs_X12.windowed.weir.fst
+    jobid: 111
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10_vs_X12.windowed.weir.fst
+    wildcards: comparison=X10_vs_X12.windowed.weir.fst
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X12.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10_vs_X12.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10_vs_X12.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10_vs_X12.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10_vs_X12.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10_vs_X12.windowed.weir.fst
+        
+
+[Tue Oct 24 19:33:05 2023]
+rule calculate_fam_fst:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X14.windowed.weir.fst
+    jobid: 29
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X14.windowed.weir.fst
+    wildcards: comparison=X02_vs_X14.windowed.weir.fst
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X14.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X14.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X14.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X14.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X14.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X14.windowed.weir.fst
+        
+
+[Tue Oct 24 19:33:05 2023]
+rule calculate_fam_fst:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X14.windowed.weir.fst
+    jobid: 89
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X14.windowed.weir.fst
+    wildcards: comparison=X07_vs_X14.windowed.weir.fst
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X14.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X14.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X14.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X14.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X14.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X14.windowed.weir.fst
+        
+
+[Tue Oct 24 19:33:05 2023]
+rule calculate_fam_fst:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X05_vs_X05.windowed.weir.fst
+    jobid: 59
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X05_vs_X05.windowed.weir.fst
+    wildcards: comparison=X05_vs_X05.windowed.weir.fst
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X05.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X05.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X05_vs_X05.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X05_vs_X05.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X05_vs_X05.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X05_vs_X05.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X05_vs_X05.windowed.weir.fst
+        
+
+[Tue Oct 24 19:33:05 2023]
+rule calculate_fam_fst:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X11_vs_X14.windowed.weir.fst
+    jobid: 119
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X11_vs_X14.windowed.weir.fst
+    wildcards: comparison=X11_vs_X14.windowed.weir.fst
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X11.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X14.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X11_vs_X14.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X11_vs_X14.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X11_vs_X14.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X11_vs_X14.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X11_vs_X14.windowed.weir.fst
+        
+
+[Tue Oct 24 19:33:05 2023]
+rule calculate_fam_fst:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X07.windowed.weir.fst
+    jobid: 22
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X07.windowed.weir.fst
+    wildcards: comparison=X02_vs_X07.windowed.weir.fst
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X07.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X07.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X07.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X07.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X07.windowed.weir.fst
+        
+
+[Tue Oct 24 19:33:05 2023]
+rule calculate_fam_fst:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X07.windowed.weir.fst
+    jobid: 82
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X07.windowed.weir.fst
+    wildcards: comparison=X07_vs_X07.windowed.weir.fst
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X07.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X07.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X07.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X07.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X07.windowed.weir.fst
+        
+
+[Tue Oct 24 19:33:05 2023]
+rule calculate_fam_fst:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X10.windowed.weir.fst
+    jobid: 52
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X10.windowed.weir.fst
+    wildcards: comparison=X04_vs_X10.windowed.weir.fst
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X10.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X10.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X10.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X10.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X10.windowed.weir.fst
+        
+
+[Tue Oct 24 19:33:05 2023]
+rule calculate_fam_fst:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10_vs_X13.windowed.weir.fst
+    jobid: 112
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10_vs_X13.windowed.weir.fst
+    wildcards: comparison=X10_vs_X13.windowed.weir.fst
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X13.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10_vs_X13.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10_vs_X13.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10_vs_X13.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10_vs_X13.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10_vs_X13.windowed.weir.fst
+        
+
+[Tue Oct 24 19:33:05 2023]
+rule calculate_fam_fst:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X15.windowed.weir.fst
+    jobid: 30
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X15.windowed.weir.fst
+    wildcards: comparison=X02_vs_X15.windowed.weir.fst
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X15.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X15.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X15.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X15.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X15.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X15.windowed.weir.fst
+        
+
+[Tue Oct 24 19:33:05 2023]
+rule calculate_fam_fst:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X15.windowed.weir.fst
+    jobid: 90
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X15.windowed.weir.fst
+    wildcards: comparison=X07_vs_X15.windowed.weir.fst
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X15.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X15.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X15.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X15.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X15.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X15.windowed.weir.fst
+        
+
+[Tue Oct 24 19:33:05 2023]
+rule calculate_fam_fst:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X05_vs_X06.windowed.weir.fst
+    jobid: 60
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X05_vs_X06.windowed.weir.fst
+    wildcards: comparison=X05_vs_X06.windowed.weir.fst
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X05.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X06.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X05_vs_X06.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X05_vs_X06.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X05_vs_X06.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X05_vs_X06.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X05_vs_X06.windowed.weir.fst
+        
+
+[Tue Oct 24 19:33:05 2023]
+rule calculate_fam_fst:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X11_vs_X15.windowed.weir.fst
+    jobid: 120
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X11_vs_X15.windowed.weir.fst
+    wildcards: comparison=X11_vs_X15.windowed.weir.fst
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X11.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X15.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X11_vs_X15.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X11_vs_X15.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X11_vs_X15.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X11_vs_X15.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X11_vs_X15.windowed.weir.fst
+        
+
+[Tue Oct 24 19:33:05 2023]
+rule calculate_fam_fst:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X01_vs_X01.windowed.weir.fst
+    jobid: 1
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X01_vs_X01.windowed.weir.fst
+    wildcards: comparison=X01_vs_X01.windowed.weir.fst
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X01.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X01.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X01_vs_X01.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X01_vs_X01.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X01_vs_X01.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X01_vs_X01.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X01_vs_X01.windowed.weir.fst
+        
+
+[Tue Oct 24 19:33:05 2023]
+rule calculate_fam_fst:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X08.windowed.weir.fst
+    jobid: 23
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X08.windowed.weir.fst
+    wildcards: comparison=X02_vs_X08.windowed.weir.fst
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X08.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X08.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X08.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X08.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X08.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X08.windowed.weir.fst
+        
+
+[Tue Oct 24 19:33:05 2023]
+rule calculate_fam_fst:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X08.windowed.weir.fst
+    jobid: 83
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X08.windowed.weir.fst
+    wildcards: comparison=X07_vs_X08.windowed.weir.fst
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X08.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X08.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X08.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X08.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X08.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X08.windowed.weir.fst
+        
+
+[Tue Oct 24 19:33:05 2023]
+rule calculate_fam_fst:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X11.windowed.weir.fst
+    jobid: 53
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X11.windowed.weir.fst
+    wildcards: comparison=X04_vs_X11.windowed.weir.fst
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X11.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X11.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X11.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X11.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X11.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X11.windowed.weir.fst
+        
+
+[Tue Oct 24 19:33:05 2023]
+rule calculate_fam_fst:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10_vs_X14.windowed.weir.fst
+    jobid: 113
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10_vs_X14.windowed.weir.fst
+    wildcards: comparison=X10_vs_X14.windowed.weir.fst
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X14.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10_vs_X14.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10_vs_X14.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10_vs_X14.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10_vs_X14.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10_vs_X14.windowed.weir.fst
+        
+
+[Tue Oct 24 19:33:05 2023]
+rule calculate_fam_fst:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X16.windowed.weir.fst
+    jobid: 31
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X16.windowed.weir.fst
+    wildcards: comparison=X02_vs_X16.windowed.weir.fst
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X16.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X16.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X16.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X16.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X16.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X16.windowed.weir.fst
+        
+
+[Tue Oct 24 19:33:05 2023]
+rule calculate_fam_fst:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X01_vs_X16.windowed.weir.fst
+    jobid: 16
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X01_vs_X16.windowed.weir.fst
+    wildcards: comparison=X01_vs_X16.windowed.weir.fst
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X01.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X16.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X01_vs_X16.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X01_vs_X16.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X01_vs_X16.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X01_vs_X16.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X01_vs_X16.windowed.weir.fst
+        
+
+[Tue Oct 24 19:33:05 2023]
+rule calculate_fam_fst:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X05_vs_X07.windowed.weir.fst
+    jobid: 61
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X05_vs_X07.windowed.weir.fst
+    wildcards: comparison=X05_vs_X07.windowed.weir.fst
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X05.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X05_vs_X07.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X05_vs_X07.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X05_vs_X07.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X05_vs_X07.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X05_vs_X07.windowed.weir.fst
+        
+
+[Tue Oct 24 19:33:05 2023]
+rule calculate_fam_fst:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X09_vs_X14.windowed.weir.fst
+    jobid: 106
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X09_vs_X14.windowed.weir.fst
+    wildcards: comparison=X09_vs_X14.windowed.weir.fst
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X09.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X14.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X09_vs_X14.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X09_vs_X14.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X09_vs_X14.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X09_vs_X14.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X09_vs_X14.windowed.weir.fst
+        
+[Tue Oct 24 19:35:58 2023]
+Error in rule calculate_fam_fst:
+    jobid: 10
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X01_vs_X10.windowed.weir.fst
+    shell:
+        
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X01.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X01_vs_X10.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X01_vs_X10.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X01_vs_X10.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X01_vs_X10.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X01_vs_X10.windowed.weir.fst
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue Oct 24 19:36:00 2023]
+Error in rule calculate_fam_fst:
+    jobid: 1
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X01_vs_X01.windowed.weir.fst
+    shell:
+        
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X01.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X01.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X01_vs_X01.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X01_vs_X01.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X01_vs_X01.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X01_vs_X01.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X01_vs_X01.windowed.weir.fst
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue Oct 24 19:36:01 2023]
+Error in rule calculate_fam_fst:
+    jobid: 49
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X07.windowed.weir.fst
+    shell:
+        
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X07.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X07.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X07.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X07.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X07.windowed.weir.fst
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue Oct 24 19:36:01 2023]
+Error in rule calculate_fam_fst:
+    jobid: 27
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X12.windowed.weir.fst
+    shell:
+        
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X12.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X12.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X12.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X12.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X12.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X12.windowed.weir.fst
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue Oct 24 19:36:02 2023]
+Error in rule calculate_fam_fst:
+    jobid: 61
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X05_vs_X07.windowed.weir.fst
+    shell:
+        
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X05.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X05_vs_X07.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X05_vs_X07.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X05_vs_X07.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X05_vs_X07.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X05_vs_X07.windowed.weir.fst
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue Oct 24 19:36:04 2023]
+Error in rule calculate_fam_fst:
+    jobid: 129
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X13_vs_X15.windowed.weir.fst
+    shell:
+        
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X13.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X15.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X13_vs_X15.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X13_vs_X15.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X13_vs_X15.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X13_vs_X15.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X13_vs_X15.windowed.weir.fst
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue Oct 24 19:36:04 2023]
+Error in rule calculate_fam_fst:
+    jobid: 30
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X15.windowed.weir.fst
+    shell:
+        
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X15.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X15.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X15.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X15.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X15.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X15.windowed.weir.fst
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue Oct 24 19:36:04 2023]
+Error in rule calculate_fam_fst:
+    jobid: 116
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X11_vs_X11.windowed.weir.fst
+    shell:
+        
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X11.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X11.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X11_vs_X11.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X11_vs_X11.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X11_vs_X11.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X11_vs_X11.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X11_vs_X11.windowed.weir.fst
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue Oct 24 19:36:04 2023]
+Error in rule calculate_fam_fst:
+    jobid: 50
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X08.windowed.weir.fst
+    shell:
+        
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X08.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X08.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X08.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X08.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X08.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X08.windowed.weir.fst
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue Oct 24 19:36:05 2023]
+Error in rule calculate_fam_fst:
+    jobid: 107
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X09_vs_X15.windowed.weir.fst
+    shell:
+        
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X09.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X15.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X09_vs_X15.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X09_vs_X15.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X09_vs_X15.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X09_vs_X15.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X09_vs_X15.windowed.weir.fst
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue Oct 24 19:36:05 2023]
+Error in rule calculate_fam_fst:
+    jobid: 70
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X05_vs_X16.windowed.weir.fst
+    shell:
+        
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X05.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X16.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X05_vs_X16.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X05_vs_X16.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X05_vs_X16.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X05_vs_X16.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X05_vs_X16.windowed.weir.fst
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue Oct 24 19:36:05 2023]
+Error in rule calculate_fam_fst:
+    jobid: 120
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X11_vs_X15.windowed.weir.fst
+    shell:
+        
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X11.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X15.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X11_vs_X15.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X11_vs_X15.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X11_vs_X15.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X11_vs_X15.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X11_vs_X15.windowed.weir.fst
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue Oct 24 19:36:06 2023]
+Error in rule calculate_fam_fst:
+    jobid: 110
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10_vs_X11.windowed.weir.fst
+    shell:
+        
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X11.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10_vs_X11.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10_vs_X11.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10_vs_X11.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10_vs_X11.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10_vs_X11.windowed.weir.fst
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue Oct 24 19:36:06 2023]
+Error in rule calculate_fam_fst:
+    jobid: 100
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X08_vs_X16.windowed.weir.fst
+    shell:
+        
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X08.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X16.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X08_vs_X16.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X08_vs_X16.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X08_vs_X16.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X08_vs_X16.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X08_vs_X16.windowed.weir.fst
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Terminating processes on user request, this might take some time.
+[Tue Oct 24 19:36:06 2023]
+[Tue Oct 24 19:36:06 2023]
+[Tue Oct 24 19:36:06 2023]
+[Tue Oct 24 19:36:06 2023]
+[Tue Oct 24 19:36:06 2023]
+[Tue Oct 24 19:36:06 2023]
+[Tue Oct 24 19:36:06 2023]
+[Tue Oct 24 19:36:06 2023]
+[Tue Oct 24 19:36:06 2023]
+[Tue Oct 24 19:36:06 2023]
+[Tue Oct 24 19:36:06 2023]
+[Tue Oct 24 19:36:06 2023]
+[Tue Oct 24 19:36:06 2023]
+[Tue Oct 24 19:36:06 2023]
+Error in rule calculate_fam_fst:
+    jobid: 80
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X06_vs_X15.windowed.weir.fst
+    shell:
+        
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X06.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X15.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X06_vs_X15.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X06_vs_X15.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X06_vs_X15.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X06_vs_X15.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X06_vs_X15.windowed.weir.fst
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue Oct 24 19:36:06 2023]
+[Tue Oct 24 19:36:06 2023]
+[Tue Oct 24 19:36:06 2023]
+[Tue Oct 24 19:36:06 2023]
+[Tue Oct 24 19:36:06 2023]
+[Tue Oct 24 19:36:06 2023]
+[Tue Oct 24 19:36:06 2023]
+Error in rule calculate_fam_fst:
+    jobid: 85
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X10.windowed.weir.fst
+    shell:
+        
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X10.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X10.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X10.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X10.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X10.windowed.weir.fst
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue Oct 24 19:36:06 2023]
+[Tue Oct 24 19:36:06 2023]
+[Tue Oct 24 19:36:06 2023]
+[Tue Oct 24 19:36:06 2023]
+[Tue Oct 24 19:36:06 2023]
+[Tue Oct 24 19:36:06 2023]
+[Tue Oct 24 19:36:06 2023]
+[Tue Oct 24 19:36:06 2023]
+[Tue Oct 24 19:36:06 2023]
+Error in rule calculate_fam_fst:
+    jobid: 109
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10_vs_X10.windowed.weir.fst
+    shell:
+        
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10_vs_X10.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10_vs_X10.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10_vs_X10.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10_vs_X10.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10_vs_X10.windowed.weir.fst
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue Oct 24 19:36:06 2023]
+[Tue Oct 24 19:36:06 2023]
+[Tue Oct 24 19:36:06 2023]
+Error in rule calculate_fam_fst:
+    jobid: 54
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X12.windowed.weir.fst
+    shell:
+        
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X12.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X12.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X12.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X12.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X12.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X12.windowed.weir.fst
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue Oct 24 19:36:06 2023]
+[Tue Oct 24 19:36:06 2023]
+[Tue Oct 24 19:36:06 2023]
+[Tue Oct 24 19:36:06 2023]
+[Tue Oct 24 19:36:06 2023]
+[Tue Oct 24 19:36:06 2023]
+[Tue Oct 24 19:36:06 2023]
+[Tue Oct 24 19:36:06 2023]
+[Tue Oct 24 19:36:06 2023]
+Error in rule calculate_fam_fst:
+    jobid: 60
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X05_vs_X06.windowed.weir.fst
+    shell:
+        
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X05.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X06.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X05_vs_X06.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X05_vs_X06.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X05_vs_X06.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X05_vs_X06.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X05_vs_X06.windowed.weir.fst
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue Oct 24 19:36:06 2023]
+[Tue Oct 24 19:36:06 2023]
+[Tue Oct 24 19:36:06 2023]
+[Tue Oct 24 19:36:07 2023]
+[Tue Oct 24 19:36:07 2023]
+[Tue Oct 24 19:36:07 2023]
+[Tue Oct 24 19:36:07 2023]
+Error in rule calculate_fam_fst:
+    jobid: 78
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X06_vs_X13.windowed.weir.fst
+    shell:
+        
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X06.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X13.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X06_vs_X13.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X06_vs_X13.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X06_vs_X13.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X06_vs_X13.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X06_vs_X13.windowed.weir.fst
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue Oct 24 19:36:07 2023]
+Error in rule calculate_fam_fst:
+    jobid: 24
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X09.windowed.weir.fst
+    shell:
+        
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X09.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X09.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X09.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X09.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X09.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X09.windowed.weir.fst
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue Oct 24 19:36:07 2023]
+Error in rule calculate_fam_fst:
+    jobid: 81
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X06_vs_X16.windowed.weir.fst
+    shell:
+        
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X06.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X16.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X06_vs_X16.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X06_vs_X16.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X06_vs_X16.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X06_vs_X16.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X06_vs_X16.windowed.weir.fst
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule calculate_fam_fst:
+    jobid: 111
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10_vs_X12.windowed.weir.fst
+    shell:
+        
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X12.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10_vs_X12.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10_vs_X12.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10_vs_X12.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10_vs_X12.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10_vs_X12.windowed.weir.fst
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule calculate_fam_fst:
+    jobid: 51
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X09.windowed.weir.fst
+    shell:
+        
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X09.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X09.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X09.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X09.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X09.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X09.windowed.weir.fst
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule calculate_fam_fst:
+    jobid: 79
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X06_vs_X14.windowed.weir.fst
+    shell:
+        
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X06.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X14.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X06_vs_X14.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X06_vs_X14.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X06_vs_X14.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X06_vs_X14.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X06_vs_X14.windowed.weir.fst
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule calculate_fam_fst:
+    jobid: 84
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X09.windowed.weir.fst
+    shell:
+        
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X09.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X09.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X09.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X09.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X09.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X09.windowed.weir.fst
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule calculate_fam_fst:
+    jobid: 58
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X16.windowed.weir.fst
+    shell:
+        
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X16.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X16.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X16.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X16.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X16.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X16.windowed.weir.fst
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule calculate_fam_fst:
+    jobid: 16
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X01_vs_X16.windowed.weir.fst
+    shell:
+        
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X01.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X16.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X01_vs_X16.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X01_vs_X16.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X01_vs_X16.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X01_vs_X16.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X01_vs_X16.windowed.weir.fst
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule calculate_fam_fst:
+    jobid: 52
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X10.windowed.weir.fst
+    shell:
+        
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X10.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X10.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X10.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X10.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X10.windowed.weir.fst
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule calculate_fam_fst:
+    jobid: 83
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X08.windowed.weir.fst
+    shell:
+        
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X08.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X08.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X08.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X08.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X08.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X08.windowed.weir.fst
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule calculate_fam_fst:
+    jobid: 119
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X11_vs_X14.windowed.weir.fst
+    shell:
+        
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X11.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X14.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X11_vs_X14.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X11_vs_X14.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X11_vs_X14.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X11_vs_X14.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X11_vs_X14.windowed.weir.fst
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule calculate_fam_fst:
+    jobid: 88
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X13.windowed.weir.fst
+    shell:
+        
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X13.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X13.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X13.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X13.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X13.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X13.windowed.weir.fst
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule calculate_fam_fst:
+    jobid: 47
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X05.windowed.weir.fst
+    shell:
+        
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X05.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X05.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X05.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X05.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X05.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X05.windowed.weir.fst
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule calculate_fam_fst:
+    jobid: 28
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X13.windowed.weir.fst
+    shell:
+        
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X13.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X13.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X13.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X13.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X13.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X13.windowed.weir.fst
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule calculate_fam_fst:
+    jobid: 48
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X06.windowed.weir.fst
+    shell:
+        
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X06.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X06.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X06.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X06.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X06.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X06.windowed.weir.fst
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule calculate_fam_fst:
+    jobid: 31
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X16.windowed.weir.fst
+    shell:
+        
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X16.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X16.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X16.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X16.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X16.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X16.windowed.weir.fst
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule calculate_fam_fst:
+    jobid: 82
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X07.windowed.weir.fst
+    shell:
+        
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X07.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X07.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X07.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X07.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X07.windowed.weir.fst
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule calculate_fam_fst:
+    jobid: 21
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X06.windowed.weir.fst
+    shell:
+        
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X06.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X06.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X06.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X06.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X06.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X06.windowed.weir.fst
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule calculate_fam_fst:
+    jobid: 17
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X02.windowed.weir.fst
+    shell:
+        
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X02.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X02.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X02.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X02.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X02.windowed.weir.fst
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule calculate_fam_fst:
+    jobid: 23
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X08.windowed.weir.fst
+    shell:
+        
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X08.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X08.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X08.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X08.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X08.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X08.windowed.weir.fst
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule calculate_fam_fst:
+    jobid: 59
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X05_vs_X05.windowed.weir.fst
+    shell:
+        
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X05.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X05.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X05_vs_X05.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X05_vs_X05.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X05_vs_X05.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X05_vs_X05.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X05_vs_X05.windowed.weir.fst
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule calculate_fam_fst:
+    jobid: 91
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X16.windowed.weir.fst
+    shell:
+        
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X16.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X16.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X16.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X16.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X16.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X16.windowed.weir.fst
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule calculate_fam_fst:
+    jobid: 113
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10_vs_X14.windowed.weir.fst
+    shell:
+        
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X14.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10_vs_X14.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10_vs_X14.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10_vs_X14.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10_vs_X14.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10_vs_X14.windowed.weir.fst
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule calculate_fam_fst:
+    jobid: 89
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X14.windowed.weir.fst
+    shell:
+        
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X14.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X14.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X14.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X14.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X14.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X14.windowed.weir.fst
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule calculate_fam_fst:
+    jobid: 20
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X05.windowed.weir.fst
+    shell:
+        
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X05.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X05.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X05.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X05.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X05.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X05.windowed.weir.fst
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule calculate_fam_fst:
+    jobid: 40
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X03_vs_X11.windowed.weir.fst
+    shell:
+        
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X03.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X11.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X03_vs_X11.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X03_vs_X11.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X03_vs_X11.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X03_vs_X11.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X03_vs_X11.windowed.weir.fst
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule calculate_fam_fst:
+    jobid: 26
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X11.windowed.weir.fst
+    shell:
+        
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X11.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X11.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X11.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X11.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X11.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X11.windowed.weir.fst
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule calculate_fam_fst:
+    jobid: 29
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X14.windowed.weir.fst
+    shell:
+        
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X14.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X14.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X14.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X14.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X14.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X14.windowed.weir.fst
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule calculate_fam_fst:
+    jobid: 115
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10_vs_X16.windowed.weir.fst
+    shell:
+        
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X16.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10_vs_X16.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10_vs_X16.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10_vs_X16.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10_vs_X16.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10_vs_X16.windowed.weir.fst
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule calculate_fam_fst:
+    jobid: 90
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X15.windowed.weir.fst
+    shell:
+        
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X15.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X15.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X15.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X15.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X15.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X15.windowed.weir.fst
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule calculate_fam_fst:
+    jobid: 86
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X11.windowed.weir.fst
+    shell:
+        
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X11.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X11.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X11.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X11.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X11.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07_vs_X11.windowed.weir.fst
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule calculate_fam_fst:
+    jobid: 108
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X09_vs_X16.windowed.weir.fst
+    shell:
+        
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X09.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X16.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X09_vs_X16.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X09_vs_X16.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X09_vs_X16.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X09_vs_X16.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X09_vs_X16.windowed.weir.fst
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule calculate_fam_fst:
+    jobid: 19
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X04.windowed.weir.fst
+    shell:
+        
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X04.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X04.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X04.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X04.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X04.windowed.weir.fst
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule calculate_fam_fst:
+    jobid: 53
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X11.windowed.weir.fst
+    shell:
+        
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X11.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X11.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X11.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X11.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X11.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X11.windowed.weir.fst
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule calculate_fam_fst:
+    jobid: 130
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X13_vs_X16.windowed.weir.fst
+    shell:
+        
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X13.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X16.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X13_vs_X16.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X13_vs_X16.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X13_vs_X16.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X13_vs_X16.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X13_vs_X16.windowed.weir.fst
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule calculate_fam_fst:
+    jobid: 18
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X03.windowed.weir.fst
+    shell:
+        
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X03.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X03.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X03.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X03.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X03.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X03.windowed.weir.fst
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule calculate_fam_fst:
+    jobid: 114
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10_vs_X15.windowed.weir.fst
+    shell:
+        
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X15.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10_vs_X15.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10_vs_X15.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10_vs_X15.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10_vs_X15.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10_vs_X15.windowed.weir.fst
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule calculate_fam_fst:
+    jobid: 55
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X13.windowed.weir.fst
+    shell:
+        
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X13.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X13.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X13.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X13.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X13.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X13.windowed.weir.fst
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule calculate_fam_fst:
+    jobid: 106
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X09_vs_X14.windowed.weir.fst
+    shell:
+        
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X09.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X14.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X09_vs_X14.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X09_vs_X14.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X09_vs_X14.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X09_vs_X14.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X09_vs_X14.windowed.weir.fst
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule calculate_fam_fst:
+    jobid: 77
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X06_vs_X12.windowed.weir.fst
+    shell:
+        
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X06.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X12.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X06_vs_X12.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X06_vs_X12.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X06_vs_X12.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X06_vs_X12.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X06_vs_X12.windowed.weir.fst
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule calculate_fam_fst:
+    jobid: 112
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10_vs_X13.windowed.weir.fst
+    shell:
+        
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X13.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10_vs_X13.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10_vs_X13.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10_vs_X13.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10_vs_X13.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10_vs_X13.windowed.weir.fst
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule calculate_fam_fst:
+    jobid: 56
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X14.windowed.weir.fst
+    shell:
+        
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X14.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X14.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X14.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X14.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X14.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X04_vs_X14.windowed.weir.fst
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule calculate_fam_fst:
+    jobid: 25
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X10.windowed.weir.fst
+    shell:
+        
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X10.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X10.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X10.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X10.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X10.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X10.windowed.weir.fst
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule calculate_fam_fst:
+    jobid: 22
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X07.windowed.weir.fst
+    shell:
+        
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X07.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X07.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X07.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X07.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X07.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X02_vs_X07.windowed.weir.fst
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule calculate_fam_fst:
+    jobid: 118
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X11_vs_X13.windowed.weir.fst
+    shell:
+        
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X11.fam --weir-fst-pop /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X13.fam --fst-window-size 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X11_vs_X13.windowed.weir.fst
+        head -n 367 /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X11_vs_X13.windowed.weir.fst > /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X11_vs_X13.windowed.weir.fst.tmp && mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X11_vs_X13.windowed.weir.fst.tmp /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/family_pi/X11_vs_X13.windowed.weir.fst
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Complete log: .snakemake/log/2023-10-24T193305.100566.snakemake.log

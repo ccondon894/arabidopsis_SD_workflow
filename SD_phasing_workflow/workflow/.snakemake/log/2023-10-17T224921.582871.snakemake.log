@@ -1,0 +1,587 @@
+The flag 'temp' used in rule calculate_pi is only valid for outputs, not inputs.
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 30
+Rules claiming more threads will be scaled down.
+Job stats:
+job             count    min threads    max threads
+------------  -------  -------------  -------------
+all                 1              1              1
+calculate_pi     2016              1              1
+separate_vcf     2016              1              1
+total            4033              1              1
+
+Select jobs to execute...
+
+[Tue Oct 17 22:49:24 2023]
+rule separate_vcf:
+    output: /storage1/chris/arabidopsis_Alyrata_107/vcfs/arabidopsis_Alyrata/arabidopsis_Alyrata_107.filtered.X04_P02vsX08_P02.vcf
+    jobid: 856
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/vcfs/arabidopsis_Alyrata/arabidopsis_Alyrata_107.filtered.X04_P02vsX08_P02.vcf
+    wildcards: comparison=X04_P02vsX08_P02
+    resources: tmpdir=/tmp
+
+
+[Tue Oct 17 22:49:24 2023]
+rule separate_vcf:
+    output: /storage1/chris/arabidopsis_Alyrata_107/vcfs/arabidopsis_Alyrata/arabidopsis_Alyrata_107.filtered.X03_PvsX15_P01.vcf
+    jobid: 580
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/vcfs/arabidopsis_Alyrata/arabidopsis_Alyrata_107.filtered.X03_PvsX15_P01.vcf
+    wildcards: comparison=X03_PvsX15_P01
+    resources: tmpdir=/tmp
+
+
+[Tue Oct 17 22:49:24 2023]
+rule separate_vcf:
+    output: /storage1/chris/arabidopsis_Alyrata_107/vcfs/arabidopsis_Alyrata/arabidopsis_Alyrata_107.filtered.X04_LvsX14_P01.vcf
+    jobid: 732
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/vcfs/arabidopsis_Alyrata/arabidopsis_Alyrata_107.filtered.X04_LvsX14_P01.vcf
+    wildcards: comparison=X04_LvsX14_P01
+    resources: tmpdir=/tmp
+
+
+[Tue Oct 17 22:49:24 2023]
+rule separate_vcf:
+    output: /storage1/chris/arabidopsis_Alyrata_107/vcfs/arabidopsis_Alyrata/arabidopsis_Alyrata_107.filtered.X04_P02vsX07_P02.vcf
+    jobid: 852
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/vcfs/arabidopsis_Alyrata/arabidopsis_Alyrata_107.filtered.X04_P02vsX07_P02.vcf
+    wildcards: comparison=X04_P02vsX07_P02
+    resources: tmpdir=/tmp
+
+[Tue Oct 17 22:49:24 2023]
+[Tue Oct 17 22:49:24 2023]
+
+[Tue Oct 17 22:49:24 2023]
+Error in rule separate_vcf:
+    jobid: 856
+    output: /storage1/chris/arabidopsis_Alyrata_107/vcfs/arabidopsis_Alyrata/arabidopsis_Alyrata_107.filtered.X04_P02vsX08_P02.vcf
+    shell:
+        
+        bcftools view -s X04_P02,X08_P02 arabidopsis_Alyrata_107.filtered.X04.vcf -o arabidopsis_Alyrata_107.filtered.X04_P02vsX08_P02.vcf
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue Oct 17 22:49:24 2023]
+Error in rule separate_vcf:
+    jobid: 580
+    output: /storage1/chris/arabidopsis_Alyrata_107/vcfs/arabidopsis_Alyrata/arabidopsis_Alyrata_107.filtered.X03_PvsX15_P01.vcf
+    shell:
+        
+        bcftools view -s X03_P,X15_P01 arabidopsis_Alyrata_107.filtered.X03.vcf -o arabidopsis_Alyrata_107.filtered.X03_PvsX15_P01.vcf
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue Oct 17 22:49:24 2023]
+Error in rule separate_vcf:
+    jobid: 732
+    output: /storage1/chris/arabidopsis_Alyrata_107/vcfs/arabidopsis_Alyrata/arabidopsis_Alyrata_107.filtered.X04_LvsX14_P01.vcf
+    shell:
+        
+        bcftools view -s X04_L,X14_P01 arabidopsis_Alyrata_107.filtered.X04.vcf -o arabidopsis_Alyrata_107.filtered.X04_LvsX14_P01.vcf
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule separate_vcf:
+    jobid: 852
+    output: /storage1/chris/arabidopsis_Alyrata_107/vcfs/arabidopsis_Alyrata/arabidopsis_Alyrata_107.filtered.X04_P02vsX07_P02.vcf
+    shell:
+        
+        bcftools view -s X04_P02,X07_P02 arabidopsis_Alyrata_107.filtered.X04.vcf -o arabidopsis_Alyrata_107.filtered.X04_P02vsX07_P02.vcf
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+rule separate_vcf:
+    output: /storage1/chris/arabidopsis_Alyrata_107/vcfs/arabidopsis_Alyrata/arabidopsis_Alyrata_107.filtered.X05_PvsX14_P01.vcf
+    jobid: 972
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/vcfs/arabidopsis_Alyrata/arabidopsis_Alyrata_107.filtered.X05_PvsX14_P01.vcf
+    wildcards: comparison=X05_PvsX14_P01
+    resources: tmpdir=/tmp
+
+
+[Tue Oct 17 22:49:24 2023]
+rule separate_vcf:
+    output: /storage1/chris/arabidopsis_Alyrata_107/vcfs/arabidopsis_Alyrata/arabidopsis_Alyrata_107.filtered.X11_LvsX13_P02.vcf
+    jobid: 1751
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/vcfs/arabidopsis_Alyrata/arabidopsis_Alyrata_107.filtered.X11_LvsX13_P02.vcf
+    wildcards: comparison=X11_LvsX13_P02
+    resources: tmpdir=/tmp
+
+
+[Tue Oct 17 22:49:24 2023]
+rule separate_vcf:
+    output: /storage1/chris/arabidopsis_Alyrata_107/vcfs/arabidopsis_Alyrata/arabidopsis_Alyrata_107.filtered.X12_P01vsX14_P01.vcf
+    jobid: 1871
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/vcfs/arabidopsis_Alyrata/arabidopsis_Alyrata_107.filtered.X12_P01vsX14_P01.vcf
+    wildcards: comparison=X12_P01vsX14_P01
+    resources: tmpdir=/tmp
+
+
+[Tue Oct 17 22:49:24 2023]
+rule separate_vcf:
+    output: /storage1/chris/arabidopsis_Alyrata_107/vcfs/arabidopsis_Alyrata/arabidopsis_Alyrata_107.filtered.X15_LvsX15_P02.vcf
+    jobid: 1991
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/vcfs/arabidopsis_Alyrata/arabidopsis_Alyrata_107.filtered.X15_LvsX15_P02.vcf
+    wildcards: comparison=X15_LvsX15_P02
+    resources: tmpdir=/tmp
+
+[Tue Oct 17 22:49:24 2023]
+[Tue Oct 17 22:49:24 2023]
+Error in rule separate_vcf:
+    jobid: 972
+    output: /storage1/chris/arabidopsis_Alyrata_107/vcfs/arabidopsis_Alyrata/arabidopsis_Alyrata_107.filtered.X05_PvsX14_P01.vcf
+    shell:
+        
+        bcftools view -s X05_P,X14_P01 arabidopsis_Alyrata_107.filtered.X05.vcf -o arabidopsis_Alyrata_107.filtered.X05_PvsX14_P01.vcf
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+
+Error in rule separate_vcf:
+    jobid: 1751
+    output: /storage1/chris/arabidopsis_Alyrata_107/vcfs/arabidopsis_Alyrata/arabidopsis_Alyrata_107.filtered.X11_LvsX13_P02.vcf
+    shell:
+        
+        bcftools view -s X11_L,X13_P02 arabidopsis_Alyrata_107.filtered.X11.vcf -o arabidopsis_Alyrata_107.filtered.X11_LvsX13_P02.vcf
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue Oct 17 22:49:24 2023]
+[Tue Oct 17 22:49:24 2023]
+Error in rule separate_vcf:
+    jobid: 1871
+    output: /storage1/chris/arabidopsis_Alyrata_107/vcfs/arabidopsis_Alyrata/arabidopsis_Alyrata_107.filtered.X12_P01vsX14_P01.vcf
+    shell:
+        
+        bcftools view -s X12_P01,X14_P01 arabidopsis_Alyrata_107.filtered.X12.vcf -o arabidopsis_Alyrata_107.filtered.X12_P01vsX14_P01.vcf
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+rule separate_vcf:
+    output: /storage1/chris/arabidopsis_Alyrata_107/vcfs/arabidopsis_Alyrata/arabidopsis_Alyrata_107.filtered.X04_LvsX14_P02.vcf
+    jobid: 733
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/vcfs/arabidopsis_Alyrata/arabidopsis_Alyrata_107.filtered.X04_LvsX14_P02.vcf
+    wildcards: comparison=X04_LvsX14_P02
+    resources: tmpdir=/tmp
+
+[Tue Oct 17 22:49:24 2023]
+
+Error in rule separate_vcf:
+    jobid: 1991
+    output: /storage1/chris/arabidopsis_Alyrata_107/vcfs/arabidopsis_Alyrata/arabidopsis_Alyrata_107.filtered.X15_LvsX15_P02.vcf
+    shell:
+        
+        bcftools view -s X15_L,X15_P02 arabidopsis_Alyrata_107.filtered.X15.vcf -o arabidopsis_Alyrata_107.filtered.X15_LvsX15_P02.vcf
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue Oct 17 22:49:24 2023]
+rule separate_vcf:
+    output: /storage1/chris/arabidopsis_Alyrata_107/vcfs/arabidopsis_Alyrata/arabidopsis_Alyrata_107.filtered.X04_P02vsX08_L.vcf
+    jobid: 853
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/vcfs/arabidopsis_Alyrata/arabidopsis_Alyrata_107.filtered.X04_P02vsX08_L.vcf
+    wildcards: comparison=X04_P02vsX08_L
+    resources: tmpdir=/tmp
+
+
+[Tue Oct 17 22:49:24 2023]
+rule separate_vcf:
+    output: /storage1/chris/arabidopsis_Alyrata_107/vcfs/arabidopsis_Alyrata/arabidopsis_Alyrata_107.filtered.X05_PvsX14_P02.vcf
+    jobid: 973
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/vcfs/arabidopsis_Alyrata/arabidopsis_Alyrata_107.filtered.X05_PvsX14_P02.vcf
+    wildcards: comparison=X05_PvsX14_P02
+    resources: tmpdir=/tmp
+
+[Tue Oct 17 22:49:24 2023]
+
+Error in rule separate_vcf:
+    jobid: 733
+    output: /storage1/chris/arabidopsis_Alyrata_107/vcfs/arabidopsis_Alyrata/arabidopsis_Alyrata_107.filtered.X04_LvsX14_P02.vcf
+    shell:
+        
+        bcftools view -s X04_L,X14_P02 arabidopsis_Alyrata_107.filtered.X04.vcf -o arabidopsis_Alyrata_107.filtered.X04_LvsX14_P02.vcf
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue Oct 17 22:49:24 2023]
+[Tue Oct 17 22:49:24 2023]
+Error in rule separate_vcf:
+    jobid: 853
+    output: /storage1/chris/arabidopsis_Alyrata_107/vcfs/arabidopsis_Alyrata/arabidopsis_Alyrata_107.filtered.X04_P02vsX08_L.vcf
+    shell:
+        
+        bcftools view -s X04_P02,X08_L arabidopsis_Alyrata_107.filtered.X04.vcf -o arabidopsis_Alyrata_107.filtered.X04_P02vsX08_L.vcf
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+rule separate_vcf:
+    output: /storage1/chris/arabidopsis_Alyrata_107/vcfs/arabidopsis_Alyrata/arabidopsis_Alyrata_107.filtered.X11_LvsX14_L.vcf
+    jobid: 1752
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/vcfs/arabidopsis_Alyrata/arabidopsis_Alyrata_107.filtered.X11_LvsX14_L.vcf
+    wildcards: comparison=X11_LvsX14_L
+    resources: tmpdir=/tmp
+
+
+[Tue Oct 17 22:49:24 2023]
+[Tue Oct 17 22:49:24 2023]
+Error in rule separate_vcf:
+    jobid: 973
+    output: /storage1/chris/arabidopsis_Alyrata_107/vcfs/arabidopsis_Alyrata/arabidopsis_Alyrata_107.filtered.X05_PvsX14_P02.vcf
+    shell:
+        
+        bcftools view -s X05_P,X14_P02 arabidopsis_Alyrata_107.filtered.X05.vcf -o arabidopsis_Alyrata_107.filtered.X05_PvsX14_P02.vcf
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+rule separate_vcf:
+    output: /storage1/chris/arabidopsis_Alyrata_107/vcfs/arabidopsis_Alyrata/arabidopsis_Alyrata_107.filtered.X12_P01vsX14_P02.vcf
+    jobid: 1872
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/vcfs/arabidopsis_Alyrata/arabidopsis_Alyrata_107.filtered.X12_P01vsX14_P02.vcf
+    wildcards: comparison=X12_P01vsX14_P02
+    resources: tmpdir=/tmp
+
+
+[Tue Oct 17 22:49:24 2023]
+rule separate_vcf:
+    output: /storage1/chris/arabidopsis_Alyrata_107/vcfs/arabidopsis_Alyrata/arabidopsis_Alyrata_107.filtered.X15_LvsX16_L.vcf
+    jobid: 1992
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/vcfs/arabidopsis_Alyrata/arabidopsis_Alyrata_107.filtered.X15_LvsX16_L.vcf
+    wildcards: comparison=X15_LvsX16_L
+    resources: tmpdir=/tmp
+
+
+[Tue Oct 17 22:49:24 2023]
+rule separate_vcf:
+    output: /storage1/chris/arabidopsis_Alyrata_107/vcfs/arabidopsis_Alyrata/arabidopsis_Alyrata_107.filtered.X07_LvsX10_P01.vcf
+    jobid: 1250
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/vcfs/arabidopsis_Alyrata/arabidopsis_Alyrata_107.filtered.X07_LvsX10_P01.vcf
+    wildcards: comparison=X07_LvsX10_P01
+    resources: tmpdir=/tmp
+
+[Tue Oct 17 22:49:24 2023]
+Error in rule separate_vcf:
+    jobid: 1752
+    output: /storage1/chris/arabidopsis_Alyrata_107/vcfs/arabidopsis_Alyrata/arabidopsis_Alyrata_107.filtered.X11_LvsX14_L.vcf
+    shell:
+        
+        bcftools view -s X11_L,X14_L arabidopsis_Alyrata_107.filtered.X11.vcf -o arabidopsis_Alyrata_107.filtered.X11_LvsX14_L.vcf
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+
+[Tue Oct 17 22:49:24 2023]
+[Tue Oct 17 22:49:24 2023]
+Error in rule separate_vcf:
+    jobid: 1872
+    output: /storage1/chris/arabidopsis_Alyrata_107/vcfs/arabidopsis_Alyrata/arabidopsis_Alyrata_107.filtered.X12_P01vsX14_P02.vcf
+    shell:
+        
+        bcftools view -s X12_P01,X14_P02 arabidopsis_Alyrata_107.filtered.X12.vcf -o arabidopsis_Alyrata_107.filtered.X12_P01vsX14_P02.vcf
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue Oct 17 22:49:24 2023]
+rule separate_vcf:
+    output: /storage1/chris/arabidopsis_Alyrata_107/vcfs/arabidopsis_Alyrata/arabidopsis_Alyrata_107.filtered.X04_LvsX15_L.vcf
+    jobid: 734
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/vcfs/arabidopsis_Alyrata/arabidopsis_Alyrata_107.filtered.X04_LvsX15_L.vcf
+    wildcards: comparison=X04_LvsX15_L
+    resources: tmpdir=/tmp
+Error in rule separate_vcf:
+    jobid: 1992
+    output: /storage1/chris/arabidopsis_Alyrata_107/vcfs/arabidopsis_Alyrata/arabidopsis_Alyrata_107.filtered.X15_LvsX16_L.vcf
+    shell:
+        
+        bcftools view -s X15_L,X16_L arabidopsis_Alyrata_107.filtered.X15.vcf -o arabidopsis_Alyrata_107.filtered.X15_LvsX16_L.vcf
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+
+
+[Tue Oct 17 22:49:24 2023]
+[Tue Oct 17 22:49:24 2023]
+Error in rule separate_vcf:
+    jobid: 1250
+    output: /storage1/chris/arabidopsis_Alyrata_107/vcfs/arabidopsis_Alyrata/arabidopsis_Alyrata_107.filtered.X07_LvsX10_P01.vcf
+    shell:
+        
+        bcftools view -s X07_L,X10_P01 arabidopsis_Alyrata_107.filtered.X07.vcf -o arabidopsis_Alyrata_107.filtered.X07_LvsX10_P01.vcf
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+rule separate_vcf:
+    output: /storage1/chris/arabidopsis_Alyrata_107/vcfs/arabidopsis_Alyrata/arabidopsis_Alyrata_107.filtered.X04_P02vsX08_P.vcf
+    jobid: 854
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/vcfs/arabidopsis_Alyrata/arabidopsis_Alyrata_107.filtered.X04_P02vsX08_P.vcf
+    wildcards: comparison=X04_P02vsX08_P
+    resources: tmpdir=/tmp
+
+
+[Tue Oct 17 22:49:24 2023]
+rule separate_vcf:
+    output: /storage1/chris/arabidopsis_Alyrata_107/vcfs/arabidopsis_Alyrata/arabidopsis_Alyrata_107.filtered.X05_PvsX15_L.vcf
+    jobid: 974
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/vcfs/arabidopsis_Alyrata/arabidopsis_Alyrata_107.filtered.X05_PvsX15_L.vcf
+    wildcards: comparison=X05_PvsX15_L
+    resources: tmpdir=/tmp
+
+[Tue Oct 17 22:49:24 2023]
+
+Error in rule separate_vcf:
+    jobid: 734
+    output: /storage1/chris/arabidopsis_Alyrata_107/vcfs/arabidopsis_Alyrata/arabidopsis_Alyrata_107.filtered.X04_LvsX15_L.vcf
+    shell:
+        
+        bcftools view -s X04_L,X15_L arabidopsis_Alyrata_107.filtered.X04.vcf -o arabidopsis_Alyrata_107.filtered.X04_LvsX15_L.vcf
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue Oct 17 22:49:24 2023]
+rule separate_vcf:
+    output: /storage1/chris/arabidopsis_Alyrata_107/vcfs/arabidopsis_Alyrata/arabidopsis_Alyrata_107.filtered.X11_LvsX14_P.vcf
+    jobid: 1753
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/vcfs/arabidopsis_Alyrata/arabidopsis_Alyrata_107.filtered.X11_LvsX14_P.vcf
+    wildcards: comparison=X11_LvsX14_P
+    resources: tmpdir=/tmp
+
+[Tue Oct 17 22:49:24 2023]
+Error in rule separate_vcf:
+    jobid: 854
+    output: /storage1/chris/arabidopsis_Alyrata_107/vcfs/arabidopsis_Alyrata/arabidopsis_Alyrata_107.filtered.X04_P02vsX08_P.vcf
+    shell:
+        
+        bcftools view -s X04_P02,X08_P arabidopsis_Alyrata_107.filtered.X04.vcf -o arabidopsis_Alyrata_107.filtered.X04_P02vsX08_P.vcf
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue Oct 17 22:49:24 2023]
+
+Error in rule separate_vcf:
+    jobid: 974
+    output: /storage1/chris/arabidopsis_Alyrata_107/vcfs/arabidopsis_Alyrata/arabidopsis_Alyrata_107.filtered.X05_PvsX15_L.vcf
+    shell:
+        
+        bcftools view -s X05_P,X15_L arabidopsis_Alyrata_107.filtered.X05.vcf -o arabidopsis_Alyrata_107.filtered.X05_PvsX15_L.vcf
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue Oct 17 22:49:24 2023]
+rule separate_vcf:
+    output: /storage1/chris/arabidopsis_Alyrata_107/vcfs/arabidopsis_Alyrata/arabidopsis_Alyrata_107.filtered.X12_P01vsX15_L.vcf
+    jobid: 1873
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/vcfs/arabidopsis_Alyrata/arabidopsis_Alyrata_107.filtered.X12_P01vsX15_L.vcf
+    wildcards: comparison=X12_P01vsX15_L
+    resources: tmpdir=/tmp
+
+
+[Tue Oct 17 22:49:24 2023]
+rule separate_vcf:
+    output: /storage1/chris/arabidopsis_Alyrata_107/vcfs/arabidopsis_Alyrata/arabidopsis_Alyrata_107.filtered.X15_LvsX16_P.vcf
+    jobid: 1993
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/vcfs/arabidopsis_Alyrata/arabidopsis_Alyrata_107.filtered.X15_LvsX16_P.vcf
+    wildcards: comparison=X15_LvsX16_P
+    resources: tmpdir=/tmp
+
+[Tue Oct 17 22:49:24 2023]
+
+Error in rule separate_vcf:
+    jobid: 1753
+    output: /storage1/chris/arabidopsis_Alyrata_107/vcfs/arabidopsis_Alyrata/arabidopsis_Alyrata_107.filtered.X11_LvsX14_P.vcf
+    shell:
+        
+        bcftools view -s X11_L,X14_P arabidopsis_Alyrata_107.filtered.X11.vcf -o arabidopsis_Alyrata_107.filtered.X11_LvsX14_P.vcf
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue Oct 17 22:49:24 2023]
+[Tue Oct 17 22:49:24 2023]
+Error in rule separate_vcf:
+    jobid: 1873
+    output: /storage1/chris/arabidopsis_Alyrata_107/vcfs/arabidopsis_Alyrata/arabidopsis_Alyrata_107.filtered.X12_P01vsX15_L.vcf
+    shell:
+        
+        bcftools view -s X12_P01,X15_L arabidopsis_Alyrata_107.filtered.X12.vcf -o arabidopsis_Alyrata_107.filtered.X12_P01vsX15_L.vcf
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+rule separate_vcf:
+    output: /storage1/chris/arabidopsis_Alyrata_107/vcfs/arabidopsis_Alyrata/arabidopsis_Alyrata_107.filtered.X01_P02vsX13_P.vcf
+    jobid: 232
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/vcfs/arabidopsis_Alyrata/arabidopsis_Alyrata_107.filtered.X01_P02vsX13_P.vcf
+    wildcards: comparison=X01_P02vsX13_P
+    resources: tmpdir=/tmp
+
+[Tue Oct 17 22:49:24 2023]
+
+Error in rule separate_vcf:
+    jobid: 1993
+    output: /storage1/chris/arabidopsis_Alyrata_107/vcfs/arabidopsis_Alyrata/arabidopsis_Alyrata_107.filtered.X15_LvsX16_P.vcf
+    shell:
+        
+        bcftools view -s X15_L,X16_P arabidopsis_Alyrata_107.filtered.X15.vcf -o arabidopsis_Alyrata_107.filtered.X15_LvsX16_P.vcf
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue Oct 17 22:49:24 2023]
+rule separate_vcf:
+    output: /storage1/chris/arabidopsis_Alyrata_107/vcfs/arabidopsis_Alyrata/arabidopsis_Alyrata_107.filtered.X03_P01vsX05_P.vcf
+    jobid: 592
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/vcfs/arabidopsis_Alyrata/arabidopsis_Alyrata_107.filtered.X03_P01vsX05_P.vcf
+    wildcards: comparison=X03_P01vsX05_P
+    resources: tmpdir=/tmp
+
+
+[Tue Oct 17 22:49:24 2023]
+rule separate_vcf:
+    output: /storage1/chris/arabidopsis_Alyrata_107/vcfs/arabidopsis_Alyrata/arabidopsis_Alyrata_107.filtered.X04_LvsX15_P.vcf
+    jobid: 735
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/vcfs/arabidopsis_Alyrata/arabidopsis_Alyrata_107.filtered.X04_LvsX15_P.vcf
+    wildcards: comparison=X04_LvsX15_P
+    resources: tmpdir=/tmp
+
+
+[Tue Oct 17 22:49:24 2023]
+[Tue Oct 17 22:49:24 2023]
+Error in rule separate_vcf:
+    jobid: 232
+    output: /storage1/chris/arabidopsis_Alyrata_107/vcfs/arabidopsis_Alyrata/arabidopsis_Alyrata_107.filtered.X01_P02vsX13_P.vcf
+    shell:
+        
+        bcftools view -s X01_P02,X13_P arabidopsis_Alyrata_107.filtered.X01.vcf -o arabidopsis_Alyrata_107.filtered.X01_P02vsX13_P.vcf
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+rule separate_vcf:
+    output: /storage1/chris/arabidopsis_Alyrata_107/vcfs/arabidopsis_Alyrata/arabidopsis_Alyrata_107.filtered.X04_P02vsX08_P01.vcf
+    jobid: 855
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/vcfs/arabidopsis_Alyrata/arabidopsis_Alyrata_107.filtered.X04_P02vsX08_P01.vcf
+    wildcards: comparison=X04_P02vsX08_P01
+    resources: tmpdir=/tmp
+[Tue Oct 17 22:49:24 2023]
+
+Error in rule separate_vcf:
+    jobid: 592
+    output: /storage1/chris/arabidopsis_Alyrata_107/vcfs/arabidopsis_Alyrata/arabidopsis_Alyrata_107.filtered.X03_P01vsX05_P.vcf
+    shell:
+        
+        bcftools view -s X03_P01,X05_P arabidopsis_Alyrata_107.filtered.X03.vcf -o arabidopsis_Alyrata_107.filtered.X03_P01vsX05_P.vcf
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue Oct 17 22:49:24 2023]
+
+Error in rule separate_vcf:
+    jobid: 735
+    output: /storage1/chris/arabidopsis_Alyrata_107/vcfs/arabidopsis_Alyrata/arabidopsis_Alyrata_107.filtered.X04_LvsX15_P.vcf
+    shell:
+        
+        bcftools view -s X04_L,X15_P arabidopsis_Alyrata_107.filtered.X04.vcf -o arabidopsis_Alyrata_107.filtered.X04_LvsX15_P.vcf
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue Oct 17 22:49:24 2023]
+rule separate_vcf:
+    output: /storage1/chris/arabidopsis_Alyrata_107/vcfs/arabidopsis_Alyrata/arabidopsis_Alyrata_107.filtered.X05_PvsX15_P.vcf
+    jobid: 975
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/vcfs/arabidopsis_Alyrata/arabidopsis_Alyrata_107.filtered.X05_PvsX15_P.vcf
+    wildcards: comparison=X05_PvsX15_P
+    resources: tmpdir=/tmp
+
+
+[Tue Oct 17 22:49:24 2023]
+rule separate_vcf:
+    output: /storage1/chris/arabidopsis_Alyrata_107/vcfs/arabidopsis_Alyrata/arabidopsis_Alyrata_107.filtered.X11_LvsX14_P01.vcf
+    jobid: 1754
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/vcfs/arabidopsis_Alyrata/arabidopsis_Alyrata_107.filtered.X11_LvsX14_P01.vcf
+    wildcards: comparison=X11_LvsX14_P01
+    resources: tmpdir=/tmp
+
+[Tue Oct 17 22:49:24 2023]
+
+Error in rule separate_vcf:
+    jobid: 855
+    output: /storage1/chris/arabidopsis_Alyrata_107/vcfs/arabidopsis_Alyrata/arabidopsis_Alyrata_107.filtered.X04_P02vsX08_P01.vcf
+    shell:
+        
+        bcftools view -s X04_P02,X08_P01 arabidopsis_Alyrata_107.filtered.X04.vcf -o arabidopsis_Alyrata_107.filtered.X04_P02vsX08_P01.vcf
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue Oct 17 22:49:24 2023]
+[Tue Oct 17 22:49:24 2023]
+Error in rule separate_vcf:
+    jobid: 975
+    output: /storage1/chris/arabidopsis_Alyrata_107/vcfs/arabidopsis_Alyrata/arabidopsis_Alyrata_107.filtered.X05_PvsX15_P.vcf
+    shell:
+        
+        bcftools view -s X05_P,X15_P arabidopsis_Alyrata_107.filtered.X05.vcf -o arabidopsis_Alyrata_107.filtered.X05_PvsX15_P.vcf
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+rule separate_vcf:
+    output: /storage1/chris/arabidopsis_Alyrata_107/vcfs/arabidopsis_Alyrata/arabidopsis_Alyrata_107.filtered.X12_P01vsX15_P.vcf
+    jobid: 1874
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/vcfs/arabidopsis_Alyrata/arabidopsis_Alyrata_107.filtered.X12_P01vsX15_P.vcf
+    wildcards: comparison=X12_P01vsX15_P
+    resources: tmpdir=/tmp
+
+[Tue Oct 17 22:49:24 2023]
+
+Error in rule separate_vcf:
+    jobid: 1754
+    output: /storage1/chris/arabidopsis_Alyrata_107/vcfs/arabidopsis_Alyrata/arabidopsis_Alyrata_107.filtered.X11_LvsX14_P01.vcf
+    shell:
+        
+        bcftools view -s X11_L,X14_P01 arabidopsis_Alyrata_107.filtered.X11.vcf -o arabidopsis_Alyrata_107.filtered.X11_LvsX14_P01.vcf
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue Oct 17 22:49:24 2023]
+rule separate_vcf:
+    output: /storage1/chris/arabidopsis_Alyrata_107/vcfs/arabidopsis_Alyrata/arabidopsis_Alyrata_107.filtered.X15_LvsX16_P01.vcf
+    jobid: 1994
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/vcfs/arabidopsis_Alyrata/arabidopsis_Alyrata_107.filtered.X15_LvsX16_P01.vcf
+    wildcards: comparison=X15_LvsX16_P01
+    resources: tmpdir=/tmp
+
+
+[Tue Oct 17 22:49:24 2023]
+rule separate_vcf:
+    output: /storage1/chris/arabidopsis_Alyrata_107/vcfs/arabidopsis_Alyrata/arabidopsis_Alyrata_107.filtered.X04_LvsX15_P01.vcf
+    jobid: 736
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/vcfs/arabidopsis_Alyrata/arabidopsis_Alyrata_107.filtered.X04_LvsX15_P01.vcf
+    wildcards: comparison=X04_LvsX15_P01
+    resources: tmpdir=/tmp
+
+[Tue Oct 17 22:49:24 2023]
+Error in rule separate_vcf:
+    jobid: 1874
+    output: /storage1/chris/arabidopsis_Alyrata_107/vcfs/arabidopsis_Alyrata/arabidopsis_Alyrata_107.filtered.X12_P01vsX15_P.vcf
+    shell:
+        
+        bcftools view -s X12_P01,X15_P arabidopsis_Alyrata_107.filtered.X12.vcf -o arabidopsis_Alyrata_107.filtered.X12_P01vsX15_P.vcf
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue Oct 17 22:49:24 2023]
+Error in rule separate_vcf:
+    jobid: 1994
+    output: /storage1/chris/arabidopsis_Alyrata_107/vcfs/arabidopsis_Alyrata/arabidopsis_Alyrata_107.filtered.X15_LvsX16_P01.vcf
+    shell:
+        
+        bcftools view -s X15_L,X16_P01 arabidopsis_Alyrata_107.filtered.X15.vcf -o arabidopsis_Alyrata_107.filtered.X15_LvsX16_P01.vcf
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Tue Oct 17 22:49:24 2023]
+Error in rule separate_vcf:
+    jobid: 736
+    output: /storage1/chris/arabidopsis_Alyrata_107/vcfs/arabidopsis_Alyrata/arabidopsis_Alyrata_107.filtered.X04_LvsX15_P01.vcf
+    shell:
+        
+        bcftools view -s X04_L,X15_P01 arabidopsis_Alyrata_107.filtered.X04.vcf -o arabidopsis_Alyrata_107.filtered.X04_LvsX15_P01.vcf
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2023-10-17T224921.582871.snakemake.log

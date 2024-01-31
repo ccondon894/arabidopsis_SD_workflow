@@ -1,0 +1,4 @@
+NameError in line 23 of /home/chris/arabadopsis_sd/SD_phasing_workflow/workflow/rules/phase_vcf.smk:
+name 'w' is not defined
+  File "/home/chris/arabadopsis_sd/SD_phasing_workflow/workflow/Snakefile", line 4, in <module>
+  File "/home/chris/arabadopsis_sd/SD_phasing_workflow/workflow/rules/phase_vcf.smk", line 23, in <module>

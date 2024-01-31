@@ -1,0 +1,7 @@
+Building DAG of jobs...
+MissingInputException in line 8 of /home/chris/arabadopsis_sd/SD_phasing_workflow/workflow/rules/phase_vcf.smk:
+Missing input files for rule split_vcf:
+    output: unphased_vcfs/ccgp_workflow_output/Ahalleri_AUBY1_final_v1.0/arabidopsis_Ahalleri_AUBY1_final_v1.0_filtered.X01_L.vcf.gz, unphased_vcfs/ccgp_workflow_output/Ahalleri_AUBY1_final_v1.0/arabidopsis_Ahalleri_AUBY1_final_v1.0_filtered.X01_P.vcf.gz
+    wildcards: cross=X01
+    affected files:
+        X01

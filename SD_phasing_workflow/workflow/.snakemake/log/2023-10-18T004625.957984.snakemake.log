@@ -1,0 +1,1054 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 40
+Rules claiming more threads will be scaled down.
+Job stats:
+job             count    min threads    max threads
+------------  -------  -------------  -------------
+all                 1              1              1
+calculate_pi     2016              1              1
+total            2017              1              1
+
+Select jobs to execute...
+
+[Wed Oct 18 00:46:28 2023]
+rule calculate_pi:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X03_P_vs_X15_P.windowed.pi
+    jobid: 579
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X03_P_vs_X15_P.windowed.pi
+    wildcards: comparison=X03_P_vs_X15_P.windowed.pi
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X03_P --indv X15_P --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X03_P_vs_X15_P.windowed.pi
+        mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X03_P_vs_X15_P.windowed.pi /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X03_P_vs_X15_P.windowed.pi.windowed.pi
+        
+
+[Wed Oct 18 00:46:28 2023]
+rule calculate_pi:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X03_P02_vs_X13_P01.windowed.pi
+    jobid: 677
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X03_P02_vs_X13_P01.windowed.pi
+    wildcards: comparison=X03_P02_vs_X13_P01.windowed.pi
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X03_P02 --indv X13_P01 --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X03_P02_vs_X13_P01.windowed.pi
+        mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X03_P02_vs_X13_P01.windowed.pi /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X03_P02_vs_X13_P01.windowed.pi.windowed.pi
+        
+
+[Wed Oct 18 00:46:28 2023]
+rule calculate_pi:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X13_P01_vs_X16_P.windowed.pi
+    jobid: 1936
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X13_P01_vs_X16_P.windowed.pi
+    wildcards: comparison=X13_P01_vs_X16_P.windowed.pi
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X13_P01 --indv X16_P --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X13_P01_vs_X16_P.windowed.pi
+        mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X13_P01_vs_X16_P.windowed.pi /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X13_P01_vs_X16_P.windowed.pi.windowed.pi
+        
+
+[Wed Oct 18 00:46:28 2023]
+rule calculate_pi:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X05_P02_vs_X08_P.windowed.pi
+    jobid: 1036
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X05_P02_vs_X08_P.windowed.pi
+    wildcards: comparison=X05_P02_vs_X08_P.windowed.pi
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X05_P02 --indv X08_P --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X05_P02_vs_X08_P.windowed.pi
+        mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X05_P02_vs_X08_P.windowed.pi /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X05_P02_vs_X08_P.windowed.pi.windowed.pi
+        
+
+[Wed Oct 18 00:46:28 2023]
+rule calculate_pi:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X06_P01_vs_X06_P02.windowed.pi
+    jobid: 1156
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X06_P01_vs_X06_P02.windowed.pi
+    wildcards: comparison=X06_P01_vs_X06_P02.windowed.pi
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X06_P01 --indv X06_P02 --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X06_P01_vs_X06_P02.windowed.pi
+        mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X06_P01_vs_X06_P02.windowed.pi /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X06_P01_vs_X06_P02.windowed.pi.windowed.pi
+        
+
+[Wed Oct 18 00:46:28 2023]
+rule calculate_pi:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X01_L_vs_X05_P.windowed.pi
+    jobid: 17
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X01_L_vs_X05_P.windowed.pi
+    wildcards: comparison=X01_L_vs_X05_P.windowed.pi
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X01_L --indv X05_P --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X01_L_vs_X05_P.windowed.pi
+        mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X01_L_vs_X05_P.windowed.pi /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X01_L_vs_X05_P.windowed.pi.windowed.pi
+        
+
+[Wed Oct 18 00:46:28 2023]
+rule calculate_pi:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X01_P01_vs_X04_P01.windowed.pi
+    jobid: 137
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X01_P01_vs_X04_P01.windowed.pi
+    wildcards: comparison=X01_P01_vs_X04_P01.windowed.pi
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X01_P01 --indv X04_P01 --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X01_P01_vs_X04_P01.windowed.pi
+        mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X01_P01_vs_X04_P01.windowed.pi /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X01_P01_vs_X04_P01.windowed.pi.windowed.pi
+        
+
+[Wed Oct 18 00:46:28 2023]
+rule calculate_pi:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X02_P_vs_X05_P.windowed.pi
+    jobid: 317
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X02_P_vs_X05_P.windowed.pi
+    wildcards: comparison=X02_P_vs_X05_P.windowed.pi
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X02_P --indv X05_P --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X02_P_vs_X05_P.windowed.pi
+        mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X02_P_vs_X05_P.windowed.pi /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X02_P_vs_X05_P.windowed.pi.windowed.pi
+        
+
+[Wed Oct 18 00:46:28 2023]
+rule calculate_pi:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X03_P01_vs_X11_P01.windowed.pi
+    jobid: 617
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X03_P01_vs_X11_P01.windowed.pi
+    wildcards: comparison=X03_P01_vs_X11_P01.windowed.pi
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X03_P01 --indv X11_P01 --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X03_P01_vs_X11_P01.windowed.pi
+        mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X03_P01_vs_X11_P01.windowed.pi /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X03_P01_vs_X11_P01.windowed.pi.windowed.pi
+        
+
+[Wed Oct 18 00:46:28 2023]
+rule calculate_pi:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X04_L_vs_X15_P01.windowed.pi
+    jobid: 736
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X04_L_vs_X15_P01.windowed.pi
+    wildcards: comparison=X04_L_vs_X15_P01.windowed.pi
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X04_L --indv X15_P01 --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X04_L_vs_X15_P01.windowed.pi
+        mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X04_L_vs_X15_P01.windowed.pi /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X04_L_vs_X15_P01.windowed.pi.windowed.pi
+        
+
+[Wed Oct 18 00:46:28 2023]
+rule calculate_pi:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X09_P_vs_X15_P.windowed.pi
+    jobid: 1575
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X09_P_vs_X15_P.windowed.pi
+    wildcards: comparison=X09_P_vs_X15_P.windowed.pi
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X09_P --indv X15_P --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X09_P_vs_X15_P.windowed.pi
+        mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X09_P_vs_X15_P.windowed.pi /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X09_P_vs_X15_P.windowed.pi.windowed.pi
+        
+
+[Wed Oct 18 00:46:28 2023]
+rule calculate_pi:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X13_P01_vs_X16_L.windowed.pi
+    jobid: 1935
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X13_P01_vs_X16_L.windowed.pi
+    wildcards: comparison=X13_P01_vs_X16_L.windowed.pi
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X13_P01 --indv X16_L --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X13_P01_vs_X16_L.windowed.pi
+        mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X13_P01_vs_X16_L.windowed.pi /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X13_P01_vs_X16_L.windowed.pi.windowed.pi
+        
+
+[Wed Oct 18 00:46:28 2023]
+rule calculate_pi:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X03_P01_vs_X11_P.windowed.pi
+    jobid: 616
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X03_P01_vs_X11_P.windowed.pi
+    wildcards: comparison=X03_P01_vs_X11_P.windowed.pi
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X03_P01 --indv X11_P --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X03_P01_vs_X11_P.windowed.pi
+        mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X03_P01_vs_X11_P.windowed.pi /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X03_P01_vs_X11_P.windowed.pi.windowed.pi
+        
+
+[Wed Oct 18 00:46:28 2023]
+rule calculate_pi:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X15_P_vs_X15_P02.windowed.pi
+    jobid: 1997
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X15_P_vs_X15_P02.windowed.pi
+    wildcards: comparison=X15_P_vs_X15_P02.windowed.pi
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X15_P --indv X15_P02 --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X15_P_vs_X15_P02.windowed.pi
+        mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X15_P_vs_X15_P02.windowed.pi /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X15_P_vs_X15_P02.windowed.pi.windowed.pi
+        
+
+[Wed Oct 18 00:46:28 2023]
+rule calculate_pi:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X05_P02_vs_X08_P01.windowed.pi
+    jobid: 1037
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X05_P02_vs_X08_P01.windowed.pi
+    wildcards: comparison=X05_P02_vs_X08_P01.windowed.pi
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X05_P02 --indv X08_P01 --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X05_P02_vs_X08_P01.windowed.pi
+        mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X05_P02_vs_X08_P01.windowed.pi /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X05_P02_vs_X08_P01.windowed.pi.windowed.pi
+        
+
+[Wed Oct 18 00:46:28 2023]
+rule calculate_pi:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X06_P01_vs_X07_L.windowed.pi
+    jobid: 1157
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X06_P01_vs_X07_L.windowed.pi
+    wildcards: comparison=X06_P01_vs_X07_L.windowed.pi
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X06_P01 --indv X07_L --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X06_P01_vs_X07_L.windowed.pi
+        mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X06_P01_vs_X07_L.windowed.pi /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X06_P01_vs_X07_L.windowed.pi.windowed.pi
+        
+
+[Wed Oct 18 00:46:28 2023]
+rule calculate_pi:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X01_L_vs_X05_P01.windowed.pi
+    jobid: 18
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X01_L_vs_X05_P01.windowed.pi
+    wildcards: comparison=X01_L_vs_X05_P01.windowed.pi
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X01_L --indv X05_P01 --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X01_L_vs_X05_P01.windowed.pi
+        mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X01_L_vs_X05_P01.windowed.pi /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X01_L_vs_X05_P01.windowed.pi.windowed.pi
+        
+
+[Wed Oct 18 00:46:28 2023]
+rule calculate_pi:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X01_P01_vs_X04_P02.windowed.pi
+    jobid: 138
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X01_P01_vs_X04_P02.windowed.pi
+    wildcards: comparison=X01_P01_vs_X04_P02.windowed.pi
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X01_P01 --indv X04_P02 --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X01_P01_vs_X04_P02.windowed.pi
+        mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X01_P01_vs_X04_P02.windowed.pi /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X01_P01_vs_X04_P02.windowed.pi.windowed.pi
+        
+
+[Wed Oct 18 00:46:28 2023]
+rule calculate_pi:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X02_P_vs_X05_P01.windowed.pi
+    jobid: 318
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X02_P_vs_X05_P01.windowed.pi
+    wildcards: comparison=X02_P_vs_X05_P01.windowed.pi
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X02_P --indv X05_P01 --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X02_P_vs_X05_P01.windowed.pi
+        mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X02_P_vs_X05_P01.windowed.pi /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X02_P_vs_X05_P01.windowed.pi.windowed.pi
+        
+
+[Wed Oct 18 00:46:28 2023]
+rule calculate_pi:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X03_P01_vs_X11_P02.windowed.pi
+    jobid: 618
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X03_P01_vs_X11_P02.windowed.pi
+    wildcards: comparison=X03_P01_vs_X11_P02.windowed.pi
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X03_P01 --indv X11_P02 --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X03_P01_vs_X11_P02.windowed.pi
+        mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X03_P01_vs_X11_P02.windowed.pi /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X03_P01_vs_X11_P02.windowed.pi.windowed.pi
+        
+
+[Wed Oct 18 00:46:28 2023]
+rule calculate_pi:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X03_P02_vs_X13_P02.windowed.pi
+    jobid: 678
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X03_P02_vs_X13_P02.windowed.pi
+    wildcards: comparison=X03_P02_vs_X13_P02.windowed.pi
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X03_P02 --indv X13_P02 --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X03_P02_vs_X13_P02.windowed.pi
+        mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X03_P02_vs_X13_P02.windowed.pi /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X03_P02_vs_X13_P02.windowed.pi.windowed.pi
+        
+
+[Wed Oct 18 00:46:28 2023]
+rule calculate_pi:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X04_L_vs_X16_L.windowed.pi
+    jobid: 738
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X04_L_vs_X16_L.windowed.pi
+    wildcards: comparison=X04_L_vs_X16_L.windowed.pi
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X04_L --indv X16_L --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X04_L_vs_X16_L.windowed.pi
+        mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X04_L_vs_X16_L.windowed.pi /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X04_L_vs_X16_L.windowed.pi.windowed.pi
+        
+
+[Wed Oct 18 00:46:28 2023]
+rule calculate_pi:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X09_P_vs_X15_P02.windowed.pi
+    jobid: 1577
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X09_P_vs_X15_P02.windowed.pi
+    wildcards: comparison=X09_P_vs_X15_P02.windowed.pi
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X09_P --indv X15_P02 --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X09_P_vs_X15_P02.windowed.pi
+        mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X09_P_vs_X15_P02.windowed.pi /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X09_P_vs_X15_P02.windowed.pi.windowed.pi
+        
+
+[Wed Oct 18 00:46:28 2023]
+rule calculate_pi:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X15_P_vs_X16_L.windowed.pi
+    jobid: 1998
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X15_P_vs_X16_L.windowed.pi
+    wildcards: comparison=X15_P_vs_X16_L.windowed.pi
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X15_P --indv X16_L --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X15_P_vs_X16_L.windowed.pi
+        mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X15_P_vs_X16_L.windowed.pi /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X15_P_vs_X16_L.windowed.pi.windowed.pi
+        
+
+[Wed Oct 18 00:46:28 2023]
+rule calculate_pi:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X05_P02_vs_X08_P02.windowed.pi
+    jobid: 1038
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X05_P02_vs_X08_P02.windowed.pi
+    wildcards: comparison=X05_P02_vs_X08_P02.windowed.pi
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X05_P02 --indv X08_P02 --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X05_P02_vs_X08_P02.windowed.pi
+        mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X05_P02_vs_X08_P02.windowed.pi /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X05_P02_vs_X08_P02.windowed.pi.windowed.pi
+        
+
+[Wed Oct 18 00:46:28 2023]
+rule calculate_pi:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X09_L_vs_X14_P.windowed.pi
+    jobid: 1541
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X09_L_vs_X14_P.windowed.pi
+    wildcards: comparison=X09_L_vs_X14_P.windowed.pi
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X09_L --indv X14_P --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X09_L_vs_X14_P.windowed.pi
+        mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X09_L_vs_X14_P.windowed.pi /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X09_L_vs_X14_P.windowed.pi.windowed.pi
+        
+
+[Wed Oct 18 00:46:28 2023]
+rule calculate_pi:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X13_L_vs_X14_P.windowed.pi
+    jobid: 1901
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X13_L_vs_X14_P.windowed.pi
+    wildcards: comparison=X13_L_vs_X14_P.windowed.pi
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X13_L --indv X14_P --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X13_L_vs_X14_P.windowed.pi
+        mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X13_L_vs_X14_P.windowed.pi /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X13_L_vs_X14_P.windowed.pi.windowed.pi
+        
+
+[Wed Oct 18 00:46:28 2023]
+rule calculate_pi:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X02_P_vs_X06_L.windowed.pi
+    jobid: 320
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X02_P_vs_X06_L.windowed.pi
+    wildcards: comparison=X02_P_vs_X06_L.windowed.pi
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X02_P --indv X06_L --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X02_P_vs_X06_L.windowed.pi
+        mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X02_P_vs_X06_L.windowed.pi /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X02_P_vs_X06_L.windowed.pi.windowed.pi
+        
+
+[Wed Oct 18 00:46:28 2023]
+rule calculate_pi:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X15_L_vs_X16_L.windowed.pi
+    jobid: 1992
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X15_L_vs_X16_L.windowed.pi
+    wildcards: comparison=X15_L_vs_X16_L.windowed.pi
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X15_L --indv X16_L --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X15_L_vs_X16_L.windowed.pi
+        mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X15_L_vs_X16_L.windowed.pi /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X15_L_vs_X16_L.windowed.pi.windowed.pi
+        
+
+[Wed Oct 18 00:46:28 2023]
+rule calculate_pi:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X14_P_vs_X14_P01.windowed.pi
+    jobid: 1962
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X14_P_vs_X14_P01.windowed.pi
+    wildcards: comparison=X14_P_vs_X14_P01.windowed.pi
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X14_P --indv X14_P01 --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X14_P_vs_X14_P01.windowed.pi
+        mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X14_P_vs_X14_P01.windowed.pi /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X14_P_vs_X14_P01.windowed.pi.windowed.pi
+        
+
+[Wed Oct 18 00:46:28 2023]
+rule calculate_pi:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X02_L_vs_X11_P.windowed.pi
+    jobid: 283
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X02_L_vs_X11_P.windowed.pi
+    wildcards: comparison=X02_L_vs_X11_P.windowed.pi
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X02_L --indv X11_P --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X02_L_vs_X11_P.windowed.pi
+        mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X02_L_vs_X11_P.windowed.pi /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X02_L_vs_X11_P.windowed.pi.windowed.pi
+        
+
+[Wed Oct 18 00:46:28 2023]
+rule calculate_pi:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X01_L_vs_X06_P.windowed.pi
+    jobid: 21
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X01_L_vs_X06_P.windowed.pi
+    wildcards: comparison=X01_L_vs_X06_P.windowed.pi
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X01_L --indv X06_P --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X01_L_vs_X06_P.windowed.pi
+        mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X01_L_vs_X06_P.windowed.pi /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X01_L_vs_X06_P.windowed.pi.windowed.pi
+        
+
+[Wed Oct 18 00:46:28 2023]
+rule calculate_pi:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X01_P01_vs_X05_P01.windowed.pi
+    jobid: 141
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X01_P01_vs_X05_P01.windowed.pi
+    wildcards: comparison=X01_P01_vs_X05_P01.windowed.pi
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X01_P01 --indv X05_P01 --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X01_P01_vs_X05_P01.windowed.pi
+        mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X01_P01_vs_X05_P01.windowed.pi /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X01_P01_vs_X05_P01.windowed.pi.windowed.pi
+        
+
+[Wed Oct 18 00:46:28 2023]
+rule calculate_pi:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X02_P_vs_X06_P.windowed.pi
+    jobid: 321
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X02_P_vs_X06_P.windowed.pi
+    wildcards: comparison=X02_P_vs_X06_P.windowed.pi
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X02_P --indv X06_P --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X02_P_vs_X06_P.windowed.pi
+        mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X02_P_vs_X06_P.windowed.pi /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X02_P_vs_X06_P.windowed.pi.windowed.pi
+        
+
+[Wed Oct 18 00:46:28 2023]
+rule calculate_pi:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X03_P01_vs_X12_P01.windowed.pi
+    jobid: 621
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X03_P01_vs_X12_P01.windowed.pi
+    wildcards: comparison=X03_P01_vs_X12_P01.windowed.pi
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X03_P01 --indv X12_P01 --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X03_P01_vs_X12_P01.windowed.pi
+        mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X03_P01_vs_X12_P01.windowed.pi /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X03_P01_vs_X12_P01.windowed.pi.windowed.pi
+        
+
+[Wed Oct 18 00:46:28 2023]
+rule calculate_pi:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X03_P02_vs_X14_P01.windowed.pi
+    jobid: 681
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X03_P02_vs_X14_P01.windowed.pi
+    wildcards: comparison=X03_P02_vs_X14_P01.windowed.pi
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X03_P02 --indv X14_P01 --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X03_P02_vs_X14_P01.windowed.pi
+        mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X03_P02_vs_X14_P01.windowed.pi /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X03_P02_vs_X14_P01.windowed.pi.windowed.pi
+        
+
+[Wed Oct 18 00:46:28 2023]
+rule calculate_pi:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X04_L_vs_X16_P02.windowed.pi
+    jobid: 741
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X04_L_vs_X16_P02.windowed.pi
+    wildcards: comparison=X04_L_vs_X16_P02.windowed.pi
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X04_L --indv X16_P02 --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X04_L_vs_X16_P02.windowed.pi
+        mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X04_L_vs_X16_P02.windowed.pi /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X04_L_vs_X16_P02.windowed.pi.windowed.pi
+        
+
+[Wed Oct 18 00:46:28 2023]
+rule calculate_pi:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X04_L_vs_X15_P02.windowed.pi
+    jobid: 737
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X04_L_vs_X15_P02.windowed.pi
+    wildcards: comparison=X04_L_vs_X15_P02.windowed.pi
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X04_L --indv X15_P02 --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X04_L_vs_X15_P02.windowed.pi
+        mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X04_L_vs_X15_P02.windowed.pi /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X04_L_vs_X15_P02.windowed.pi.windowed.pi
+        
+
+[Wed Oct 18 00:46:28 2023]
+rule calculate_pi:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X09_P_vs_X15_P01.windowed.pi
+    jobid: 1576
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X09_P_vs_X15_P01.windowed.pi
+    wildcards: comparison=X09_P_vs_X15_P01.windowed.pi
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X09_P --indv X15_P01 --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X09_P_vs_X15_P01.windowed.pi
+        mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X09_P_vs_X15_P01.windowed.pi /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X09_P_vs_X15_P01.windowed.pi.windowed.pi
+        
+
+[Wed Oct 18 00:46:28 2023]
+rule calculate_pi:
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X03_P02_vs_X13_P.windowed.pi
+    jobid: 676
+    reason: Missing output files: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X03_P02_vs_X13_P.windowed.pi
+    wildcards: comparison=X03_P02_vs_X13_P.windowed.pi
+    resources: tmpdir=/tmp
+
+
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X03_P02 --indv X13_P --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X03_P02_vs_X13_P.windowed.pi
+        mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X03_P02_vs_X13_P.windowed.pi /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X03_P02_vs_X13_P.windowed.pi.windowed.pi
+        
+Terminating processes on user request, this might take some time.
+[Wed Oct 18 00:48:15 2023]
+[Wed Oct 18 00:48:15 2023]
+[Wed Oct 18 00:48:15 2023]
+[Wed Oct 18 00:48:15 2023]
+[Wed Oct 18 00:48:15 2023]
+[Wed Oct 18 00:48:15 2023]
+[Wed Oct 18 00:48:15 2023]
+[Wed Oct 18 00:48:15 2023]
+[Wed Oct 18 00:48:15 2023]
+[Wed Oct 18 00:48:15 2023]
+[Wed Oct 18 00:48:15 2023]
+[Wed Oct 18 00:48:15 2023]
+[Wed Oct 18 00:48:15 2023]
+[Wed Oct 18 00:48:15 2023]
+[Wed Oct 18 00:48:15 2023]
+[Wed Oct 18 00:48:15 2023]
+[Wed Oct 18 00:48:15 2023]
+[Wed Oct 18 00:48:15 2023]
+[Wed Oct 18 00:48:15 2023]
+[Wed Oct 18 00:48:15 2023]
+[Wed Oct 18 00:48:15 2023]
+Error in rule calculate_pi:
+    jobid: 317
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X02_P_vs_X05_P.windowed.pi
+    shell:
+        
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X02_P --indv X05_P --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X02_P_vs_X05_P.windowed.pi
+        mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X02_P_vs_X05_P.windowed.pi /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X02_P_vs_X05_P.windowed.pi.windowed.pi
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Wed Oct 18 00:48:15 2023]
+[Wed Oct 18 00:48:15 2023]
+[Wed Oct 18 00:48:15 2023]
+[Wed Oct 18 00:48:15 2023]
+[Wed Oct 18 00:48:15 2023]
+[Wed Oct 18 00:48:15 2023]
+[Wed Oct 18 00:48:15 2023]
+[Wed Oct 18 00:48:15 2023]
+[Wed Oct 18 00:48:15 2023]
+[Wed Oct 18 00:48:15 2023]
+[Wed Oct 18 00:48:15 2023]
+[Wed Oct 18 00:48:15 2023]
+[Wed Oct 18 00:48:15 2023]
+[Wed Oct 18 00:48:15 2023]
+[Wed Oct 18 00:48:15 2023]
+[Wed Oct 18 00:48:15 2023]
+[Wed Oct 18 00:48:15 2023]
+[Wed Oct 18 00:48:15 2023]
+[Wed Oct 18 00:48:15 2023]
+Error in rule calculate_pi:
+    jobid: 17
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X01_L_vs_X05_P.windowed.pi
+    shell:
+        
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X01_L --indv X05_P --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X01_L_vs_X05_P.windowed.pi
+        mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X01_L_vs_X05_P.windowed.pi /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X01_L_vs_X05_P.windowed.pi.windowed.pi
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule calculate_pi:
+    jobid: 738
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X04_L_vs_X16_L.windowed.pi
+    shell:
+        
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X04_L --indv X16_L --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X04_L_vs_X16_L.windowed.pi
+        mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X04_L_vs_X16_L.windowed.pi /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X04_L_vs_X16_L.windowed.pi.windowed.pi
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule calculate_pi:
+    jobid: 1575
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X09_P_vs_X15_P.windowed.pi
+    shell:
+        
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X09_P --indv X15_P --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X09_P_vs_X15_P.windowed.pi
+        mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X09_P_vs_X15_P.windowed.pi /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X09_P_vs_X15_P.windowed.pi.windowed.pi
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule calculate_pi:
+    jobid: 1962
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X14_P_vs_X14_P01.windowed.pi
+    shell:
+        
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X14_P --indv X14_P01 --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X14_P_vs_X14_P01.windowed.pi
+        mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X14_P_vs_X14_P01.windowed.pi /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X14_P_vs_X14_P01.windowed.pi.windowed.pi
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule calculate_pi:
+    jobid: 1541
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X09_L_vs_X14_P.windowed.pi
+    shell:
+        
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X09_L --indv X14_P --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X09_L_vs_X14_P.windowed.pi
+        mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X09_L_vs_X14_P.windowed.pi /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X09_L_vs_X14_P.windowed.pi.windowed.pi
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule calculate_pi:
+    jobid: 681
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X03_P02_vs_X14_P01.windowed.pi
+    shell:
+        
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X03_P02 --indv X14_P01 --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X03_P02_vs_X14_P01.windowed.pi
+        mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X03_P02_vs_X14_P01.windowed.pi /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X03_P02_vs_X14_P01.windowed.pi.windowed.pi
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule calculate_pi:
+    jobid: 1036
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X05_P02_vs_X08_P.windowed.pi
+    shell:
+        
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X05_P02 --indv X08_P --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X05_P02_vs_X08_P.windowed.pi
+        mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X05_P02_vs_X08_P.windowed.pi /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X05_P02_vs_X08_P.windowed.pi.windowed.pi
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule calculate_pi:
+    jobid: 1901
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X13_L_vs_X14_P.windowed.pi
+    shell:
+        
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X13_L --indv X14_P --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X13_L_vs_X14_P.windowed.pi
+        mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X13_L_vs_X14_P.windowed.pi /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X13_L_vs_X14_P.windowed.pi.windowed.pi
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule calculate_pi:
+    jobid: 621
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X03_P01_vs_X12_P01.windowed.pi
+    shell:
+        
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X03_P01 --indv X12_P01 --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X03_P01_vs_X12_P01.windowed.pi
+        mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X03_P01_vs_X12_P01.windowed.pi /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X03_P01_vs_X12_P01.windowed.pi.windowed.pi
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule calculate_pi:
+    jobid: 1936
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X13_P01_vs_X16_P.windowed.pi
+    shell:
+        
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X13_P01 --indv X16_P --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X13_P01_vs_X16_P.windowed.pi
+        mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X13_P01_vs_X16_P.windowed.pi /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X13_P01_vs_X16_P.windowed.pi.windowed.pi
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule calculate_pi:
+    jobid: 579
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X03_P_vs_X15_P.windowed.pi
+    shell:
+        
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X03_P --indv X15_P --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X03_P_vs_X15_P.windowed.pi
+        mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X03_P_vs_X15_P.windowed.pi /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X03_P_vs_X15_P.windowed.pi.windowed.pi
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule calculate_pi:
+    jobid: 321
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X02_P_vs_X06_P.windowed.pi
+    shell:
+        
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X02_P --indv X06_P --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X02_P_vs_X06_P.windowed.pi
+        mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X02_P_vs_X06_P.windowed.pi /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X02_P_vs_X06_P.windowed.pi.windowed.pi
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule calculate_pi:
+    jobid: 678
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X03_P02_vs_X13_P02.windowed.pi
+    shell:
+        
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X03_P02 --indv X13_P02 --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X03_P02_vs_X13_P02.windowed.pi
+        mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X03_P02_vs_X13_P02.windowed.pi /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X03_P02_vs_X13_P02.windowed.pi.windowed.pi
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule calculate_pi:
+    jobid: 737
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X04_L_vs_X15_P02.windowed.pi
+    shell:
+        
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X04_L --indv X15_P02 --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X04_L_vs_X15_P02.windowed.pi
+        mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X04_L_vs_X15_P02.windowed.pi /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X04_L_vs_X15_P02.windowed.pi.windowed.pi
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule calculate_pi:
+    jobid: 1998
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X15_P_vs_X16_L.windowed.pi
+    shell:
+        
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X15_P --indv X16_L --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X15_P_vs_X16_L.windowed.pi
+        mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X15_P_vs_X16_L.windowed.pi /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X15_P_vs_X16_L.windowed.pi.windowed.pi
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule calculate_pi:
+    jobid: 676
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X03_P02_vs_X13_P.windowed.pi
+    shell:
+        
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X03_P02 --indv X13_P --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X03_P02_vs_X13_P.windowed.pi
+        mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X03_P02_vs_X13_P.windowed.pi /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X03_P02_vs_X13_P.windowed.pi.windowed.pi
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule calculate_pi:
+    jobid: 741
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X04_L_vs_X16_P02.windowed.pi
+    shell:
+        
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X04_L --indv X16_P02 --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X04_L_vs_X16_P02.windowed.pi
+        mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X04_L_vs_X16_P02.windowed.pi /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X04_L_vs_X16_P02.windowed.pi.windowed.pi
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule calculate_pi:
+    jobid: 1935
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X13_P01_vs_X16_L.windowed.pi
+    shell:
+        
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X13_P01 --indv X16_L --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X13_P01_vs_X16_L.windowed.pi
+        mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X13_P01_vs_X16_L.windowed.pi /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X13_P01_vs_X16_L.windowed.pi.windowed.pi
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule calculate_pi:
+    jobid: 1576
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X09_P_vs_X15_P01.windowed.pi
+    shell:
+        
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X09_P --indv X15_P01 --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X09_P_vs_X15_P01.windowed.pi
+        mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X09_P_vs_X15_P01.windowed.pi /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X09_P_vs_X15_P01.windowed.pi.windowed.pi
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule calculate_pi:
+    jobid: 137
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X01_P01_vs_X04_P01.windowed.pi
+    shell:
+        
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X01_P01 --indv X04_P01 --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X01_P01_vs_X04_P01.windowed.pi
+        mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X01_P01_vs_X04_P01.windowed.pi /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X01_P01_vs_X04_P01.windowed.pi.windowed.pi
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule calculate_pi:
+    jobid: 1157
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X06_P01_vs_X07_L.windowed.pi
+    shell:
+        
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X06_P01 --indv X07_L --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X06_P01_vs_X07_L.windowed.pi
+        mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X06_P01_vs_X07_L.windowed.pi /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X06_P01_vs_X07_L.windowed.pi.windowed.pi
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule calculate_pi:
+    jobid: 21
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X01_L_vs_X06_P.windowed.pi
+    shell:
+        
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X01_L --indv X06_P --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X01_L_vs_X06_P.windowed.pi
+        mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X01_L_vs_X06_P.windowed.pi /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X01_L_vs_X06_P.windowed.pi.windowed.pi
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule calculate_pi:
+    jobid: 1997
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X15_P_vs_X15_P02.windowed.pi
+    shell:
+        
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X15_P --indv X15_P02 --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X15_P_vs_X15_P02.windowed.pi
+        mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X15_P_vs_X15_P02.windowed.pi /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X15_P_vs_X15_P02.windowed.pi.windowed.pi
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule calculate_pi:
+    jobid: 677
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X03_P02_vs_X13_P01.windowed.pi
+    shell:
+        
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X03_P02 --indv X13_P01 --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X03_P02_vs_X13_P01.windowed.pi
+        mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X03_P02_vs_X13_P01.windowed.pi /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X03_P02_vs_X13_P01.windowed.pi.windowed.pi
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule calculate_pi:
+    jobid: 736
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X04_L_vs_X15_P01.windowed.pi
+    shell:
+        
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X04_L --indv X15_P01 --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X04_L_vs_X15_P01.windowed.pi
+        mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X04_L_vs_X15_P01.windowed.pi /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X04_L_vs_X15_P01.windowed.pi.windowed.pi
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule calculate_pi:
+    jobid: 617
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X03_P01_vs_X11_P01.windowed.pi
+    shell:
+        
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X03_P01 --indv X11_P01 --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X03_P01_vs_X11_P01.windowed.pi
+        mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X03_P01_vs_X11_P01.windowed.pi /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X03_P01_vs_X11_P01.windowed.pi.windowed.pi
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule calculate_pi:
+    jobid: 320
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X02_P_vs_X06_L.windowed.pi
+    shell:
+        
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X02_P --indv X06_L --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X02_P_vs_X06_L.windowed.pi
+        mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X02_P_vs_X06_L.windowed.pi /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X02_P_vs_X06_L.windowed.pi.windowed.pi
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule calculate_pi:
+    jobid: 1037
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X05_P02_vs_X08_P01.windowed.pi
+    shell:
+        
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X05_P02 --indv X08_P01 --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X05_P02_vs_X08_P01.windowed.pi
+        mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X05_P02_vs_X08_P01.windowed.pi /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X05_P02_vs_X08_P01.windowed.pi.windowed.pi
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule calculate_pi:
+    jobid: 1156
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X06_P01_vs_X06_P02.windowed.pi
+    shell:
+        
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X06_P01 --indv X06_P02 --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X06_P01_vs_X06_P02.windowed.pi
+        mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X06_P01_vs_X06_P02.windowed.pi /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X06_P01_vs_X06_P02.windowed.pi.windowed.pi
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule calculate_pi:
+    jobid: 616
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X03_P01_vs_X11_P.windowed.pi
+    shell:
+        
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X03_P01 --indv X11_P --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X03_P01_vs_X11_P.windowed.pi
+        mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X03_P01_vs_X11_P.windowed.pi /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X03_P01_vs_X11_P.windowed.pi.windowed.pi
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule calculate_pi:
+    jobid: 18
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X01_L_vs_X05_P01.windowed.pi
+    shell:
+        
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X01_L --indv X05_P01 --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X01_L_vs_X05_P01.windowed.pi
+        mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X01_L_vs_X05_P01.windowed.pi /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X01_L_vs_X05_P01.windowed.pi.windowed.pi
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule calculate_pi:
+    jobid: 318
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X02_P_vs_X05_P01.windowed.pi
+    shell:
+        
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X02_P --indv X05_P01 --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X02_P_vs_X05_P01.windowed.pi
+        mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X02_P_vs_X05_P01.windowed.pi /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X02_P_vs_X05_P01.windowed.pi.windowed.pi
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule calculate_pi:
+    jobid: 141
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X01_P01_vs_X05_P01.windowed.pi
+    shell:
+        
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X01_P01 --indv X05_P01 --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X01_P01_vs_X05_P01.windowed.pi
+        mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X01_P01_vs_X05_P01.windowed.pi /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X01_P01_vs_X05_P01.windowed.pi.windowed.pi
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule calculate_pi:
+    jobid: 1577
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X09_P_vs_X15_P02.windowed.pi
+    shell:
+        
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X09_P --indv X15_P02 --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X09_P_vs_X15_P02.windowed.pi
+        mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X09_P_vs_X15_P02.windowed.pi /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X09_P_vs_X15_P02.windowed.pi.windowed.pi
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule calculate_pi:
+    jobid: 138
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X01_P01_vs_X04_P02.windowed.pi
+    shell:
+        
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X01_P01 --indv X04_P02 --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X01_P01_vs_X04_P02.windowed.pi
+        mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X01_P01_vs_X04_P02.windowed.pi /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X01_P01_vs_X04_P02.windowed.pi.windowed.pi
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule calculate_pi:
+    jobid: 618
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X03_P01_vs_X11_P02.windowed.pi
+    shell:
+        
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X03_P01 --indv X11_P02 --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X03_P01_vs_X11_P02.windowed.pi
+        mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X03_P01_vs_X11_P02.windowed.pi /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X03_P01_vs_X11_P02.windowed.pi.windowed.pi
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule calculate_pi:
+    jobid: 1038
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X05_P02_vs_X08_P02.windowed.pi
+    shell:
+        
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X05_P02 --indv X08_P02 --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X05_P02_vs_X08_P02.windowed.pi
+        mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X05_P02_vs_X08_P02.windowed.pi /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X05_P02_vs_X08_P02.windowed.pi.windowed.pi
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule calculate_pi:
+    jobid: 1992
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X15_L_vs_X16_L.windowed.pi
+    shell:
+        
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X15_L --indv X16_L --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X15_L_vs_X16_L.windowed.pi
+        mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X15_L_vs_X16_L.windowed.pi /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X15_L_vs_X16_L.windowed.pi.windowed.pi
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule calculate_pi:
+    jobid: 283
+    input: /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz
+    output: /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X02_L_vs_X11_P.windowed.pi
+    shell:
+        
+        vcftools --gzvcf /storage1/chris/arabidopsis_Alyrata_107/arabidopsis_Alyrata_107.filtered.vcf.gz --indv X02_L --indv X11_P --window-pi 500000 --out /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X02_L_vs_X11_P.windowed.pi
+        mv /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X02_L_vs_X11_P.windowed.pi /storage1/chris/arabidopsis_Alyrata_107/relatedness_stats/X02_L_vs_X11_P.windowed.pi.windowed.pi
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Complete log: .snakemake/log/2023-10-18T004625.957984.snakemake.log
